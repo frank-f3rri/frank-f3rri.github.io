@@ -6,11 +6,15 @@
   "author": "arjun-bhatt <46908672+arjun-bhatt@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "NODE_ENV=development webpack-dev-server"
   },
   "devDependencies": {
+    "html-webpack-plugin": "^4.2.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "jquery": "^3.5.0"
   }
 }
