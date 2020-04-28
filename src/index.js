@@ -9,7 +9,10 @@ import './style.scss';
 // eslint-disable-next-line no-unused-vars
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Switch, { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+// eslint-disable-next-line import/no-duplicates
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+// eslint-disable-next-line import/no-duplicates
+import { Switch } from 'react-router-dom';
 
 // import to be used in your App component
 
