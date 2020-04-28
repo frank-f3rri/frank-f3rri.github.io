@@ -6,64 +6,62 @@
 // eslint-disable-next-line no-unused-vars
 import $ from 'jquery';
 import './style.scss';
+// eslint-disable-next-line no-unused-vars
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import debounce from 'lodash.debounce';
-import SearchBar from './components/search_bar';
-import youtubeSearch from './youtube-api';
-import VideoList from './components/video_list';
-import VideoDetail from './components/video_detail';
-
+import Switch, { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 
 // import to be used in your App component
 
 
 /* const App = () => <div className="test">All the REACT are belong to us!</div>; */
 
-class Base extends Component {
-    // eslint-disable-next-line no-useless-constructor
-    constructor(props) {
-        super(props);
 
-        this.state = {
-          videos: [],
-          selectedVideo: null,
-        };
-        this.search = debounce(this.search, 300);
-        this.search('pixar');
+const About = (props) => {
+  return <div> All there is to know about me </div>;
+};
+const Welcome = (props) => {
+  return <div>Welcome</div>;
+};
 
+const Nav = (props) => {
+  return (
+    <nav>
+      <ul>
+        <li><NavLink to="/" exact>Home</NavLink></li>
+        <li><NavLink to="/about">About</NavLink></li>
+        <li><NavLink to="/test/id1">test id1</NavLink></li>
+        <li><NavLink to="/test/id2">test id2</NavLink></li>
+      </ul>
+    </nav>
+  );
+};
 
-/*        youtubeSearch('pixar').then((videos) => {
-          this.setState({
-            videos,
-            selectedVideo: videos[0],
-          });
-        }); */
-      }
+const Test = (props) => {
+  return <div> ID: {props.match.params.id} </div>;
+};
 
-    search = (text) => {
-    youtubeSearch(text).then((videos) => {
-        this.setState({
-        videos,
-        selectedVideo: videos[0],
-        });
-    });
-    }
+const FallBack = (props) => {
+  return <div>URL Not Found</div>;
+};
 
-    render() {
-        return (
-          <div>
-            <SearchBar id="search-bar" onSearchChange={this.search} />
-            <div id="video-section">
-              <VideoDetail video={this.state.selectedVideo} />
-              <VideoList onVideoSelect={(selectedVideo) => this.setState({ selectedVideo })} videos={this.state.videos} />
-            </div>
-          </div>
-          );
-    }
-}
+const App = (props) => {
+  return (
+    <Router>
+      <div>
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={Welcome} />
+          <Route path="/about" component={About} />
+          <Route exact path="/test/:id" component={Test} />
+          <Route component={FallBack} />
+        </Switch>
+      </div>
+    </Router>
+  );
+};
 
-ReactDOM.render(<Base />, document.getElementById('main'));
+ReactDOM.render(<App />, document.getElementById('main'));
 
 
 /* let time = 0;
