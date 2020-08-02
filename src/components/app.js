@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unused-state */
 /* eslint-disable react/prefer-stateless-function */
@@ -26,7 +27,7 @@ import MapView from './mapview';
 
 
 const About = (props) => {
-  return <div> All there is to know about me </div>;
+  return <MapView />;
 };
 const Welcome = (props) => {
   return (
@@ -41,7 +42,7 @@ const Nav = (props) => {
     <nav>
       <ul>
         <li><NavLink to="/" exact>Home</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
+        <li><NavLink to="/whatsup">See what's up with who's down!</NavLink></li>
         <li><NavLink to="/test/id1">test id1</NavLink></li>
         <Controls>
           <li><NavLink to="/test/id2">test id2</NavLink></li>
@@ -67,13 +68,12 @@ const App = (props) => {
           <Nav />
           <Switch>
             <Route exact path="/" component={Welcome} />
-            <Route path="/about" component={About} />
+            <Route path="/whatsup" component={About} />
             <Route exact path="/test/:id" component={Test} />
             <Route component={FallBack} />
           </Switch>
         </div>
       </Router>
-      <MapView />
     </div>
   );
 };
