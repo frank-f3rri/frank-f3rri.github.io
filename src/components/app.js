@@ -17,6 +17,7 @@ import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 import Counter from './counter';
 import Controls from './controls';
+import MapView from './mapview';
 
 // import to be used in your App component
 
@@ -60,17 +61,20 @@ const FallBack = (props) => {
 
 const App = (props) => {
   return (
-    <Router>
-      <div>
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={Welcome} />
-          <Route path="/about" component={About} />
-          <Route exact path="/test/:id" component={Test} />
-          <Route component={FallBack} />
-        </Switch>
-      </div>
-    </Router>
+    <div>
+      <Router>
+        <div>
+          <Nav />
+          <Switch>
+            <Route exact path="/" component={Welcome} />
+            <Route path="/about" component={About} />
+            <Route exact path="/test/:id" component={Test} />
+            <Route component={FallBack} />
+          </Switch>
+        </div>
+      </Router>
+      <MapView />
+    </div>
   );
 };
 
