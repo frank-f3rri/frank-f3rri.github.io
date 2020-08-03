@@ -34,6 +34,7 @@ class MapView extends Component {
         lng: 72.2887,
       },
       zoom: 3,
+      activeID: '',
     };
 
     if ('geolocation' in navigator) {
@@ -58,11 +59,11 @@ class MapView extends Component {
   }
 
   onMapChildHover = (_hoverKey, childProps) => {
-    console.log('hover start!'); // _hoverKey, childProps);
+    this.setState({ activeID: _hoverKey });
   }
 
   noMoreHover = (_hoverKey, childProps) => {
-    console.log('hover end'); // _hoverKey, childProps);
+    this.setState({ activeID: '' });
   }
 
   render() {
@@ -79,18 +80,31 @@ class MapView extends Component {
             onChildMouseLeave={this.noMoreHover}
 
           >
-            {this.props.eventList.all.map((event) => (
-              <img
-                key={event.id}
-                lat={event.latitude}
-                lng={event.longitude}
-                src={categoryToURL.get(event.category)}
-                alt=""
-                height="50px"
-                width="50px"
-                text={event.eventTitle}
-              />
-            ))}
+            {this.props.eventList.all.map((event) => {
+              return (
+                <div
+                  key={event.id}
+                  lat={event.latitude}
+                  lng={event.longitude}
+                >
+                  <img
+                    src={categoryToURL.get(event.category)}
+                    alt=""
+                    height="50px"
+                    width="50px"
+                    text={event.eventTitle}
+                    showMore={() => { this.showMore(event.id); }}
+                  />
+                  {event.id == this.state.activeID && (
+                    <div>
+                      title = {event.eventTitle}
+                      host = {event.hostName}
+                      skillLevel = {event.skillLevel}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </GoogleMapReact>
         </div>
       </div>

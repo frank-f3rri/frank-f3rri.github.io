@@ -19,6 +19,7 @@ import { Switch } from 'react-router-dom';
 import Counter from './counter';
 import Controls from './controls';
 import MapView from './mapview';
+import Create from './create';
 
 // import to be used in your App component
 
@@ -43,17 +44,16 @@ const Nav = (props) => {
       <ul>
         <li><NavLink to="/" exact>Home</NavLink></li>
         <li><NavLink to="/whatsup">See what's up with who's down!</NavLink></li>
-        <li><NavLink to="/test/id1">test id1</NavLink></li>
-        <Controls>
-          <li><NavLink to="/test/id2">test id2</NavLink></li>
-        </Controls>
+        <li><NavLink to="/create">Create portal (only to be used to that listserv middleman)</NavLink></li>
+        <Controls />
       </ul>
     </nav>
   );
 };
 
 const Test = (props) => {
-  return <div> ID: {props.match.params.id} </div>;
+  console.log('test getting called!');
+  return <Create />;
 };
 
 const FallBack = (props) => {
@@ -69,7 +69,7 @@ const App = (props) => {
           <Switch>
             <Route exact path="/" component={Welcome} />
             <Route path="/whatsup" component={About} />
-            <Route exact path="/test/:id" component={Test} />
+            <Route path="/create" component={Create} />
             <Route component={FallBack} />
           </Switch>
         </div>
