@@ -1,62 +1,54 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unused-state */
-/* eslint-disable react/prefer-stateless-function */
-/* eslint-disable indent */
-
-// change require to es6 import style
-// eslint-disable-next-line no-unused-vars
-import $ from 'jquery';
-// eslint-disable-next-line import/no-absolute-path
-import '/Users/arjunbhatt/Documents/GitHub/sa6/src/style.scss';
-// eslint-disable-next-line no-unused-vars
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-// eslint-disable-next-line import/no-duplicates
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
-// eslint-disable-next-line import/no-duplicates
-import { Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router, Route, NavLink, Switch,
+} from 'react-router-dom';
+
 import MapView from './mapview';
 import Create from './create';
 
-// import to be used in your App component
-
-
-/* const App = () => <div className="test">All the REACT are belong to us!</div>; */
-
-
-const About = (props) => {
-  return <MapView />;
-};
-const Welcome = (props) => {
-  return (
-
-    <div>Marketing website goes here</div>
-);
-};
 
 const Nav = (props) => {
+  // @bella also change this. The <ol> / <li> should be changed; only thing to be preserved here exactly is the NavLink components
   return (
     <nav>
-      <ul>
+      <ol>
         <li><NavLink to="/" exact>Home</NavLink></li>
-        <li><NavLink to="/whatsup">See what's up with who's down!</NavLink></li>
+        <li><NavLink to="/whatsup">{'See what\'s up with who\'s down!'}</NavLink></li>
         <li><NavLink to="/create">Create portal (only to be used to that listserv middleman)</NavLink></li>
-      </ul>
+      </ol>
     </nav>
   );
 };
 
-const Test = (props) => {
-  console.log('test getting called!');
-  return <Create />;
-};
-
 const FallBack = (props) => {
+  // this is our 404 page, this is also a low priority
   return <div>URL Not Found</div>;
 };
 
+
+const Welcome = (props) => {
+  // @bella the majority of your work will go right here in the return block of this function, this is your highest priority
+  return (
+    <div>
+      <div>Marketing website goes here</div>
+      <div>Who's Down: Spontaneity Organized.</div>
+    </div>
+  );
+};
+
+// ==================== EVERYTHING BELOW THIS LINE BELLA DOESN'T NEED TO TOUCH ==================== //
+
+const About = (props) => {
+  // don't touch this
+  return <MapView />;
+};
+
+
 const App = (props) => {
+  // don't touch this
   return (
     <div>
       <Router>
@@ -75,14 +67,3 @@ const App = (props) => {
 };
 
 export default App;
-
-/* let time = 0;
-
-function updateClock() {
-    time += 1;
-    $('#main').html(`You have been on this page for ${String(time)} seconds.`);
-    console.log('update called!');
-}
-
-window.setInterval(updateClock, 1000);
-*/
