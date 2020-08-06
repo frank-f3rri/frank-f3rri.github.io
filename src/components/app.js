@@ -16,8 +16,6 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 // eslint-disable-next-line import/no-duplicates
 import { Switch } from 'react-router-dom';
-import Counter from './counter';
-import Controls from './controls';
 import MapView from './mapview';
 import Create from './create';
 
@@ -32,9 +30,8 @@ const About = (props) => {
 };
 const Welcome = (props) => {
   return (
-    <Counter>
-      <div>Welcome</div>
-    </Counter>
+
+    <div>Marketing website goes here</div>
 );
 };
 
@@ -45,7 +42,6 @@ const Nav = (props) => {
         <li><NavLink to="/" exact>Home</NavLink></li>
         <li><NavLink to="/whatsup">See what's up with who's down!</NavLink></li>
         <li><NavLink to="/create">Create portal (only to be used to that listserv middleman)</NavLink></li>
-        <Controls />
       </ul>
     </nav>
   );

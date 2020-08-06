@@ -10,8 +10,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import GoogleMapReact from 'google-map-react';
 import { fetchEvents } from '../actions';
+import { API_KEY } from '../../env';
 
-const API_KEY = 'AIzaSyC9FtiwCd6V87hYd_DLqJZTd2vKIpY93pQ';
 const categoryToURL = new Map([
   ['nightlife', 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/silly-bird-ernie-echols.jpg'],
   ['culture', 'https://pqspb.org/bpqpoq/wp-content/uploads/2018/10/bpq-blja-cm-2018.jpg'],
