@@ -72,10 +72,19 @@ const Welcome = (props) => {
     fontWeight: 'bold',
     color: '#B5D8CF',
     paddingTop: '100px',
+    backgroundColor: 'black',
   };
 
 
   // ^now you can re-use this style object where you need to
+
+  const boldText = {
+    fontFamily: 'Montserrat, sans-serif',
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'black',
+    textAlign = 'center',
+  };
 
   const blueHeaderStyle = {
     fontFamily: 'Montserrat, sans-serif',
@@ -95,14 +104,14 @@ const Welcome = (props) => {
 
   return (
     <div>
-      <h1 style={{ color: 'orange' }}>Who's Down: Spontaneity Organized.</h1>
-      <div style={styleObj}>Imagine a Campus Where...</div> {/* this style is ugly don't use this just wanted to show you an example */}
+      <h1 style="text-align:center;">Who's Down: Spontaneity Organized.</h1>
+      <h2 style={styleObj}>Imagine a Campus Where...</h2> {/* this style is ugly don't use this just wanted to show you an example */}
       <ul>
         <li>No commitment is necessary to meet new people.</li>
         <li>A user-friendly interface shows what’s happening on campus right now.</li>
         <li>People, not organizations, create events.</li>
       </ul>
-      <div> The meaningful connections of the ‘24s don’t have to be another casualty of COVID-19.</div>
+      <div style='background-color:#92cd00'> The meaningful connections of the ‘24s don’t have to be another casualty of COVID-19.</div>
       <div className="container">
         Featuring hard event capacity limits that prevent discovery of full events,
         rigorous data analytics and event moderation to measure and enforce compliance,
