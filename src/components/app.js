@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router, Route, NavLink, Switch,
 } from 'react-router-dom';
+import '../style.scss';
 
 import MapView from './mapview';
 import Create from './create';
@@ -83,7 +84,7 @@ const Welcome = (props) => {
     fontSize: 20,
     fontWeight: 'bold',
     color: 'black',
-    textAlign = 'center',
+    justifyContent: 'center',
   };
 
   const blueHeaderStyle = {
@@ -104,14 +105,16 @@ const Welcome = (props) => {
 
   return (
     <div>
-      <h1 style="text-align:center;">Who's Down: Spontaneity Organized.</h1>
+      <div className="title">Who's Down: Spontaneity Organized</div>
       <h2 style={styleObj}>Imagine a Campus Where...</h2> {/* this style is ugly don't use this just wanted to show you an example */}
-      <ul>
-        <li>No commitment is necessary to meet new people.</li>
-        <li>A user-friendly interface shows what’s happening on campus right now.</li>
-        <li>People, not organizations, create events.</li>
-      </ul>
-      <div style='background-color:#92cd00'> The meaningful connections of the ‘24s don’t have to be another casualty of COVID-19.</div>
+      <div className="container">
+        <ul>
+          <li>No commitment is necessary to meet new people.</li>
+          <li>A user-friendly interface shows what’s happening on campus right now.</li>
+          <li>People, not organizations, create events.</li>
+        </ul>
+      </div>
+      <div className="h1"> The meaningful connections of the ‘24s don’t have to be another casualty of COVID-19.</div>
       <div className="container">
         Featuring hard event capacity limits that prevent discovery of full events,
         rigorous data analytics and event moderation to measure and enforce compliance,

@@ -1,14 +1,22 @@
 $fontcolor:  rgb(10%, 10%, 10%);
 $backgroundcolor: rgb(98%, 98%, 98%);
+$fontfamily: "Montserrat", sans-serif;
 
 
-.body {
+.title {
   font-family: "Montserrat", sans-serif;
-  color: pink;
-  background-color: black;
-  margin: 50px;
+  color: #FB582F;
+  font-weight: bold;
+  font-size: 36pt;
+  text-align: center;
 }
 
+
+.h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: large;
+  text-align: center;
+}
 
 #search-bar {
   margin-bottom: 20px;
@@ -44,12 +52,15 @@ $backgroundcolor: rgb(98%, 98%, 98%);
 }
 
 .container {
-  color: grey;
+  color: #4A4A4A;
+  font-family: "Raleway", sans-serif;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .item {
