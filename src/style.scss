@@ -5,7 +5,7 @@ $backgroundcolor: rgb(98%, 98%, 98%);
 .body {
   font-family: "Montserrat", sans-serif;
   color: pink;
-  background-color: $backgroundcolor;
+  background-color: black;
   margin: 50px;
 }
 
@@ -44,8 +44,15 @@ $backgroundcolor: rgb(98%, 98%, 98%);
 }
 
 .container {
-  color: pink;
-  background-color: black;
+  color: grey;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  align-content: center;
+}
+
+.item {
+  order: 1;
+  
 }
