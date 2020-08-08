@@ -32,11 +32,28 @@ const Welcome = (props) => {
   // @bella the majority of your work will go right here in the return block of this function, this is your highest priority
 
   const styleObj = {
-    fontSize: 30,
-    color: '#4a54f1',
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: '#B5D8CF',
     paddingTop: '100px',
   };
   // ^now you can re-use this style object where you need to
+
+  const blueHeaderStyle = {
+    fontFamily: 'Montserrat, sans-serif',
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: '#005975',
+    paddingTop: '100px',
+  };
+
+  const blueBodyStyle = {
+    fontFamily: 'Montserrat, sans-serif',
+    fontSize: 12,
+    fontWeight: 'extra-light',
+    color: '#005975',
+    paddingTop: '100px',
+  };
 
   return (
     <div>
@@ -62,21 +79,21 @@ const Welcome = (props) => {
         }}
         >
           <div>
-            <li>Geographically and Systematically View Events Near You</li>
+            <li style={blueHeaderStyle}>Geographically and Systematically View Events Near You</li>
             <ul>
               <li style={{ overflowWrap: 'break-word' }}>We help event seekers discover spontaneous events through geographic display and extensive filtering capabilities.</li>
             </ul>
           </div>
           <div>
-            <li>Connect Students Across Communities</li>
+            <li style={blueHeaderStyle}>Connect Students Across Communities</li>
             <ul>
-              <li>We help you publish events  to create and plan them as they occur.</li>
+              <li style={blueBodyStyle}>We help you publish events  to create and plan them as they occur.</li>
             </ul>
           </div>
           <div>
-            <li>Manage Remote Events</li>
+            <li style={blueHeaderStyle}>Manage Remote Events</li>
             <ul>
-              <li>We support in-person and virtual events, helping students keep track of Zoom links and in-person gatherings to connect with the events that matter to them.</li>
+              <li style={blueBodyStyle}>We support in-person and virtual events, helping students keep track of Zoom links and in-person gatherings to connect with the events that matter to them.</li>
             </ul>
           </div>
         </ul>
