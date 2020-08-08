@@ -30,40 +30,57 @@ const FallBack = (props) => {
 
 const Welcome = (props) => {
   // @bella the majority of your work will go right here in the return block of this function, this is your highest priority
+
+  const styleObj = {
+    fontSize: 30,
+    color: '#4a54f1',
+    paddingTop: '100px',
+  };
+  // ^now you can re-use this style object where you need to
+
   return (
     <div>
-      <link href="src/style.scss">
-        <h1 style={{ color: 'orange' }}>Who's Down: Spontaneity Organized.</h1>
-        <div className="container">Imagine a College Campus Where...</div>
-        <ul>
-          <li>No commitment is necessary to meet new people.</li>
-          <li>A user-friendly interface shows what’s happening on campus right now.</li>
-          <li>People, not organizations, create events.</li>
+      <h1 style={{ color: 'orange' }}>Who's Down: Spontaneity Organized.</h1>
+      <div style={styleObj}>Imagine a Campus Where...</div> {/* this style is ugly don't use this just wanted to show you an example */}
+      <ul>
+        <li>No commitment is necessary to meet new people.</li>
+        <li>A user-friendly interface shows what’s happening on campus right now.</li>
+        <li>People, not organizations, create events.</li>
+      </ul>
+      <div> The meaningful connections of the ‘24s don’t have to be another casualty of COVID-19.</div>
+      <div className="container">
+        Featuring hard event capacity limits that prevent discovery of full events,
+        rigorous data analytics and event moderation to measure and enforce compliance,
+        in-app reminders to follow public safety measures, and built in functionality
+        to organize real-life and virtual events alike, Who’s Down offers a way for ‘24s and
+        other Dartmouth undergraduates to ameliorate the pains of social distancing in a measurably safe way.
+      </div>
+      <img src="https://live.staticflickr.com/65535/50201520242_9bdce03c13_b.jpg" alt="" />
+      <div>
+        <ul style={{
+          flexDirection: 'row', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly', flexFlow: 'row',
+        }}
+        >
+          <div>
+            <li>Geographically and Systematically View Events Near You</li>
+            <ul>
+              <li style={{ overflowWrap: 'break-word' }}>We help event seekers discover spontaneous events through geographic display and extensive filtering capabilities.</li>
+            </ul>
+          </div>
+          <div>
+            <li>Connect Students Across Communities</li>
+            <ul>
+              <li>We help you publish events  to create and plan them as they occur.</li>
+            </ul>
+          </div>
+          <div>
+            <li>Manage Remote Events</li>
+            <ul>
+              <li>We support in-person and virtual events, helping students keep track of Zoom links and in-person gatherings to connect with the events that matter to them.</li>
+            </ul>
+          </div>
         </ul>
-        <div> The meaningful connections of the ‘24s don’t have to be another casualty of COVID-19.</div>
-        <div className="container">
-          Featuring hard event capacity limits that prevent discovery of full events,
-          rigorous data analytics and event moderation to measure and enforce compliance,
-          in-app reminders to follow public safety measures, and built in functionality
-          to organize real-life and virtual events alike, Who’s Down offers a way for ‘24s and
-          other Dartmouth undergraduates to ameliorate the pains of social distancing in a measurably safe way.
-        </div>
-        <img src="https://live.staticflickr.com/65535/50201520242_9bdce03c13_b.jpg" alt="" />
-        <ul>
-          <li>Geographically and Systematically View Events Near You</li>
-          <ul>
-            <li>We help event seekers discover spontaneous events through geographic display and extensive filtering capabilities.</li>
-          </ul>
-          <li>Connect Students Across Communities</li>
-          <ul>
-            <li>We help you publish events  to create and plan them as they occur.</li>
-          </ul>
-          <li>Manage Remote Events</li>
-          <ul>
-            <li>We support in-person and virtual events, helping students keep track of Zoom links and in-person gatherings to connect with the events that matter to them.</li>
-          </ul>
-        </ul>
-      </link>
+      </div>
     </div>
   );
 };
