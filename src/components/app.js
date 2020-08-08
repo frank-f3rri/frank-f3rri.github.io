@@ -42,7 +42,11 @@ const Welcome = (props) => {
         <li>People, not organizations, create events.</li>
       </ol>
       <div> The meaningful connections of the ‘24s don’t have to be another casualty of COVID-19.</div>
-      <div>Featuring hard event capacity limits that prevent discovery of full events, rigorous data analytics and event moderation to measure and enforce compliance, in-app reminders to follow public safety measures, and built in functionality to organize real-life and virtual events alike, Who’s Down offers a way for ‘24s and other Dartmouth undergraduates to ameliorate the pains of social distancing in a measurably safe way.</div>
+      <div>Featuring hard event capacity limits that prevent discovery of full events,
+         rigorous data analytics and event moderation to measure and enforce compliance,
+         in-app reminders to follow public safety measures, and built in functionality
+         to organize real-life and virtual events alike, Who’s Down offers a way for ‘24s and
+         other Dartmouth undergraduates to ameliorate the pains of social distancing in a measurably safe way.</div>
     </div>
   );
 };
