@@ -9,7 +9,6 @@ import {
 import MapView from './mapview';
 import Create from './create';
 
-
 const Nav = (props) => {
   // @bella also change this. The <ol> / <li> should be changed; only thing to be preserved here exactly is the NavLink components
   return (
@@ -34,21 +33,36 @@ const Welcome = (props) => {
   return (
     <div>
       <div>Marketing website goes here</div>
-      <div>Who's Down: Spontaneity Organized.</div>
+      <h1 style={{ color: 'orange' }}>Who's Down: Spontaneity Organized.</h1>
       <div>Imagine a Campus Where...</div>
-      <ol>
+      <ul>
         <li>No commitment is necessary to meet new people.</li>
         <li>A user-friendly interface shows what’s happening on campus right now.</li>
         <li>People, not organizations, create events.</li>
-      </ol>
+      </ul>
       <div> The meaningful connections of the ‘24s don’t have to be another casualty of COVID-19.</div>
-      <div>Featuring hard event capacity limits that prevent discovery of full events,
+      <div className="container">
+        Featuring hard event capacity limits that prevent discovery of full events,
         rigorous data analytics and event moderation to measure and enforce compliance,
         in-app reminders to follow public safety measures, and built in functionality
         to organize real-life and virtual events alike, Who’s Down offers a way for ‘24s and
         other Dartmouth undergraduates to ameliorate the pains of social distancing in a measurably safe way.
       </div>
-      <img src="https://geo3.ggpht.com/cbk?panoid=RnTpx7j5W43miAvQama6mg&output=thumbnail&cb_client=search.gws-prod.gps&thumb=2&yaw=115.657486&pitch=0&thumbfov=100&w=128&h=128" alt="" />
+      <img src="https://live.staticflickr.com/65535/50201520242_9bdce03c13_b.jpg" alt="" />
+      <ul>
+        <li>Geographically and Systematically View Events Near You</li>
+        <ul>
+          <li>We help event seekers discover spontaneous events through geographic display and extensive filtering capabilities.</li>
+        </ul>
+        <li>Connect Students Across Communities</li>
+        <ul>
+          <li>We help you publish events  to create and plan them as they occur.</li>
+        </ul>
+        <li>Manage Remote Events</li>
+        <ul>
+          <li>We support in-person and virtual events, helping students keep track of Zoom links and in-person gatherings to connect with the events that matter to them.</li>
+        </ul>
+      </ul>
     </div>
   );
 };

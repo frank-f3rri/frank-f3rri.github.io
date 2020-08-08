@@ -2,9 +2,9 @@ $fontcolor:  rgb(10%, 10%, 10%);
 $backgroundcolor: rgb(98%, 98%, 98%);
 
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: $fontcolor;
+.body {
+  font-family: "Montserrat", sans-serif;
+  color: pink;
   background-color: $backgroundcolor;
   margin: 50px;
 }
@@ -31,7 +31,7 @@ body {
     cursor: pointer;
     display: flex;
     width: 25vw;
-    padding: 10px;
+    padding: 20px;
   }
   li:hover {
     background: darken( $backgroundcolor, 10% );
@@ -41,4 +41,11 @@ body {
 
 .active {
   color: pink;
+}
+
+.container {
+  color: pink;
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
