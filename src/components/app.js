@@ -9,16 +9,52 @@ import {
 import MapView from './mapview';
 import Create from './create';
 
+
+export const navStyle = {
+  flexDirection: 'row', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly', flexFlow: 'row', listStyleType: 'none',
+};
+
+export const navOptionStyleHover = {
+  color: 'orange',
+  fontSize: '20px',
+};
+
+export const navOptionStyle = {
+  color: '#FFFFFF',
+};
+
 const Nav = (props) => {
+  const [isHover, setIsHover] = useState(false);
+  const [isHover1, setIsHover1] = useState(false);
+  const [isHover2, setIsHover2] = useState(false);
+
+
   // @bella also change this. The <ol> / <li> should be changed; only thing to be preserved here exactly is the NavLink components
   return (
     <nav>
-      <ol>
-        <li><NavLink to="/" exact>Home</NavLink></li>
-        <li><NavLink to="/whatsup">{'See what\'s up with who\'s down!'}</NavLink></li>
-        <li><NavLink to="/create">Create portal (only to be used to that listserv middleman)</NavLink></li>
+      <ol style={navStyle}>
+        <li style={isHover ? navOptionStyleHover : navOptionStyle}
+          onMouseEnter={() => { setIsHover(true); }}
+          onMouseLeave={() => { setIsHover(false); }}
+        >
+          <NavLink to="/" exact>Home</NavLink>
+        </li>
+        <li style={isHover1 ? navOptionStyleHover : navOptionStyle}
+          onMouseEnter={() => { setIsHover1(true); }}
+          onMouseLeave={() => { setIsHover1(false); }}
+        >
+          <NavLink to="/whatsup">{'See what\'s up with who\'s down!'}</NavLink>
+        </li>
+        <li style={isHover2 ? navOptionStyleHover : navOptionStyle}
+          onMouseEnter={() => { setIsHover2(true); }}
+          onMouseLeave={() => { setIsHover2(false); }}
+        >
+          <NavLink to="/create">Create portal (only to be used to that listserv middleman)</NavLink>
+        </li>
       </ol>
+
     </nav>
+
   );
 };
 
@@ -37,6 +73,8 @@ const Welcome = (props) => {
     color: '#B5D8CF',
     paddingTop: '100px',
   };
+
+
   // ^now you can re-use this style object where you need to
 
   const blueHeaderStyle = {
