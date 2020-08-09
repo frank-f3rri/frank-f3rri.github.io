@@ -60,10 +60,13 @@ $fontfamily: "Montserrat", sans-serif;
 .topBox{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   .reasonBox{
-    width: 30%;
+    width: 350px;
     color:orange;
+    justify-content: center;
     &:hover{
       color: blue;
     }
