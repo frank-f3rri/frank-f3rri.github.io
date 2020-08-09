@@ -4,6 +4,7 @@ $fontfamily: "Montserrat", sans-serif;
 
 .image{
   width:100%;
+  padding-top: 200 px;
 }
 
 .title {
@@ -27,7 +28,7 @@ $fontfamily: "Montserrat", sans-serif;
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 87, 34);
-  height:300px;
+  height:400px;
 
 }
 .mainPage{
@@ -37,27 +38,20 @@ $fontfamily: "Montserrat", sans-serif;
 
 }
 
-<<<<<<< HEAD
-.h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: large;
-  text-align: center;
-}
-
-=======
 .imagine{
+  font-family: "Pacifico", sans-serif;
   font-size: 24px;
   color:rgb(255, 87, 34);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 200px;
+  margin-bottom: 100px;
   font-weight: bold;
-  font-style: italic;
+  text-align: center;
 }
 .appDesc{
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   background-color: rgb(255, 87, 34);
-  padding:50px;
+  padding:100px;
 }
 .topBox{
   display: flex;
@@ -76,6 +70,7 @@ $fontfamily: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 22px;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 .basicTextBoldWhite{
   color:white;
@@ -84,23 +79,25 @@ $fontfamily: "Montserrat", sans-serif;
   align-items: center;
   font-weight: bold;
   font-size: 22px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .basicText{
   color:rgb(255, 87, 34);
   display: flex;
   justify-content: 'center';
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .basicTextWhite{
   color:white;
   display: flex;
   justify-content: 'center';
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
->>>>>>> 84307c0723f2ada798bc30f4533a4a2dbf4ffeab
 #search-bar {
   margin-bottom: 20px;
 
@@ -134,19 +131,6 @@ $fontfamily: "Montserrat", sans-serif;
   color: pink;
 }
 
-<<<<<<< HEAD
-.container {
-  color: #4A4A4A;
-  font-family: "Raleway", sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  padding: 20px;
-}
-=======
 // .container {
 //   color: grey;
 //   display: flex;
@@ -155,7 +139,6 @@ $fontfamily: "Montserrat", sans-serif;
 //   justify-content: center;
 //   align-content: center;
 // }
->>>>>>> 84307c0723f2ada798bc30f4533a4a2dbf4ffeab
 
 .item {
   order: 1;

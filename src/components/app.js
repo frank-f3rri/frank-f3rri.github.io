@@ -37,19 +37,19 @@ const Nav = (props) => {
           onMouseEnter={() => { setIsHover(true); }}
           onMouseLeave={() => { setIsHover(false); }}
         >
-          <NavLink to="/" exact style={{ color: '#ff5722', fontFamily: 'Montserrat' }}>Home</NavLink>
+          <NavLink to="/" exact style={{ color: '#ff5722', fontFamily: 'Montserrat', fontWeight: 'bold' }}>Home</NavLink>
         </li>
         <li style={isHover1 ? navOptionStyleHover : navOptionStyle}
           onMouseEnter={() => { setIsHover1(true); }}
           onMouseLeave={() => { setIsHover1(false); }}
         >
-          <NavLink to="/whatsup" style={{ color: '#ff5722', fontFamily: 'Montserrat' }}>{'See what\'s up with who\'s down!'}</NavLink>
+          <NavLink to="/whatsup" style={{ color: '#ff5722', fontFamily: 'Montserrat' }}>Explore</NavLink>
         </li>
         <li style={isHover2 ? navOptionStyleHover : navOptionStyle}
           onMouseEnter={() => { setIsHover2(true); }}
           onMouseLeave={() => { setIsHover2(false); }}
         >
-          <NavLink to="/create" style={{ color: '#ff5722', fontFamily: 'Montserrat' }}>Create portal (only to be used to that listserv middleman)</NavLink>
+          <NavLink to="/create" style={{ color: '#ff5722', fontFamily: 'Montserrat' }}>Create Portal</NavLink>
         </li>
       </ol>
 
