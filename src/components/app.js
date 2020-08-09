@@ -15,7 +15,7 @@ import MapView from './mapview';
 import Create from './create';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
-AOS.init();
+AOS.init(); // {mirror: true} changes the animations significantly but I think it goes a bit over the top
 
 
 export const navStyle = {
@@ -114,7 +114,7 @@ const Welcome = (props) => {
 
   return (
     <div>
-      <div className="titleBox">
+      <div className="titleBox" data-aos="zoom-out-down" data-aos-duration="2000">
         <h1 style={{
           fontFamily: 'Pacifico', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 40, marginBottom: 25, fontSize: 40,
         }}
@@ -130,7 +130,7 @@ const Welcome = (props) => {
       <div className="mainPage">
 
         <div className="imagine">Imagine a Campus Where...</div> {/* this style is ugly don't use this just wanted to show you an example */}
-        <div className="topBox" data-aos="fade-in">
+        <div className="topBox" data-aos="fade-in" data-aos-duration="2000">
           <div className="reasonBox"><p className="basicText">No commitment is necessary to meet new people.</p></div>
           <div className="reasonBox"><p className="basicText">A user-friendly interface shows what’s happening on campus right now.</p></div>
           <div className="reasonBox"><p className="basicText">People, not organizations, create events.</p></div>
