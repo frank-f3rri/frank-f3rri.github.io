@@ -45,6 +45,10 @@ $fontfamily: "Montserrat", sans-serif;
   margin-top: 200px;
   margin-bottom: 100px;
   font-weight: bold;
+  font-style: italic;
+  align-items: center;
+  justify-content: center;
+  right: 50%;
   text-align: center;
 }
 .appDesc{
@@ -60,6 +64,13 @@ $fontfamily: "Montserrat", sans-serif;
   .reasonBox{
     width: 30%;
     color:orange;
+    &:hover{
+      color: blue;
+    }
+    &:active{
+      color: green;
+    }
+
   }
 }
 .basicTextBold{
