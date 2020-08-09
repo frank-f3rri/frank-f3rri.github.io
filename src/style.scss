@@ -19,7 +19,7 @@ $fontfamily: "Montserrat", sans-serif;
   color:#ff5722;
   height: 100%;
   padding-top: 10px;
-  padding-bottom: 2px;
+  padding-bottom: 100px;
 }
 
 .titleBox{
@@ -71,22 +71,25 @@ $fontfamily: "Montserrat", sans-serif;
   font-size: 22px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .basicTextBoldWhite{
   color:white;
   display: flex;
   justify-content: 'center';
   align-items: center;
-  font-weight: bold;
-  font-size: 22px;
-  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
 }
 .basicText{
   color:rgb(255, 87, 34);
+  font-weight: lighter;
   display: flex;
   justify-content: 'center';
   align-items: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
@@ -96,7 +99,7 @@ $fontfamily: "Montserrat", sans-serif;
   display: flex;
   justify-content: 'center';
   align-items: center;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 #search-bar {
   margin-bottom: 20px;
