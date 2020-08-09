@@ -1,6 +1,9 @@
 $fontcolor:  rgb(10%, 10%, 10%);
 $backgroundcolor: rgb(98%, 98%, 98%);
 
+.image{
+  width:100%;
+}
 
 .body {
   font-family: "Montserrat", sans-serif;
@@ -8,8 +11,85 @@ $backgroundcolor: rgb(98%, 98%, 98%);
   background-color: black;
   margin: 50px;
 }
+.navBar{
+  background-color: white;
+  color:#ff5722;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
 
+.titleBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 87, 34);
+  height:300px;
 
+}
+.mainPage{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+
+}
+
+.imagine{
+  font-size: 24px;
+  color:rgb(255, 87, 34);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+.appDesc{
+  margin-top: 40px;
+  margin-bottom: 60px;
+  background-color: rgb(255, 87, 34);
+  padding:50px;
+}
+.topBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .reasonBox{
+    width: 30%;
+    color:orange;
+  }
+}
+.basicTextBold{
+  color:rgb(255, 87, 34);
+  display: flex;
+  justify-content: 'center';
+  align-items: center;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.basicTextBoldWhite{
+  color:white;
+  display: flex;
+  justify-content: 'center';
+  align-items: center;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.basicText{
+  color:rgb(255, 87, 34);
+  display: flex;
+  justify-content: 'center';
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.basicTextWhite{
+  color:white;
+  display: flex;
+  justify-content: 'center';
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
 #search-bar {
   margin-bottom: 20px;
 
@@ -43,14 +123,14 @@ $backgroundcolor: rgb(98%, 98%, 98%);
   color: pink;
 }
 
-.container {
-  color: grey;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-}
+// .container {
+//   color: grey;
+//   display: flex;
+//   flex-wrap: wrap;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-content: center;
+// }
 
 .item {
   order: 1;
