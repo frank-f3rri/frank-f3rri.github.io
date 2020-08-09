@@ -2,6 +2,9 @@ $fontcolor:  rgb(10%, 10%, 10%);
 $backgroundcolor: rgb(98%, 98%, 98%);
 $fontfamily: "Montserrat", sans-serif;
 
+.image{
+  width:100%;
+}
 
 .title {
   font-family: "Montserrat", sans-serif;
@@ -10,14 +13,94 @@ $fontfamily: "Montserrat", sans-serif;
   font-size: 36pt;
   text-align: center;
 }
+.navBar{
+  background-color: white;
+  color:#ff5722;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
 
+.titleBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 87, 34);
+  height:300px;
 
+}
+.mainPage{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+
+}
+
+<<<<<<< HEAD
 .h1 {
   font-family: "Montserrat", sans-serif;
   font-size: large;
   text-align: center;
 }
 
+=======
+.imagine{
+  font-size: 24px;
+  color:rgb(255, 87, 34);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+.appDesc{
+  margin-top: 40px;
+  margin-bottom: 60px;
+  background-color: rgb(255, 87, 34);
+  padding:50px;
+}
+.topBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .reasonBox{
+    width: 30%;
+    color:orange;
+  }
+}
+.basicTextBold{
+  color:rgb(255, 87, 34);
+  display: flex;
+  justify-content: 'center';
+  align-items: center;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.basicTextBoldWhite{
+  color:white;
+  display: flex;
+  justify-content: 'center';
+  align-items: center;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.basicText{
+  color:rgb(255, 87, 34);
+  display: flex;
+  justify-content: 'center';
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.basicTextWhite{
+  color:white;
+  display: flex;
+  justify-content: 'center';
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+>>>>>>> 84307c0723f2ada798bc30f4533a4a2dbf4ffeab
 #search-bar {
   margin-bottom: 20px;
 
@@ -51,6 +134,7 @@ $fontfamily: "Montserrat", sans-serif;
   color: pink;
 }
 
+<<<<<<< HEAD
 .container {
   color: #4A4A4A;
   font-family: "Raleway", sans-serif;
@@ -62,6 +146,16 @@ $fontfamily: "Montserrat", sans-serif;
   text-align: center;
   padding: 20px;
 }
+=======
+// .container {
+//   color: grey;
+//   display: flex;
+//   flex-wrap: wrap;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-content: center;
+// }
+>>>>>>> 84307c0723f2ada798bc30f4533a4a2dbf4ffeab
 
 .item {
   order: 1;
