@@ -165,8 +165,8 @@ const Welcome = (props) => {
               other Dartmouth undergraduates to ameliorate the pains of social distancing in a measurably safe way.
             </p>
           </div>
-
         </div>
+
         <div className="topBox">
 
           <div className="reasonBox" data-aos="fade-left">
