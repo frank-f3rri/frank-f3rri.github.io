@@ -4,7 +4,18 @@ $fontfamily: "Montserrat", sans-serif;
 
 .image{
   width:100%;
-  padding-top: 200 px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.icon{
+  width: 40%;
+  padding-top: 100 px;
+  padding-bottom: 50 px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .title {
@@ -40,7 +51,7 @@ $fontfamily: "Montserrat", sans-serif;
 
 .imagine{
   font-family: "Pacifico", sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   color:rgb(255, 87, 34);
   margin-top: 200px;
   margin-bottom: 100px;
@@ -57,25 +68,29 @@ $fontfamily: "Montserrat", sans-serif;
   background-color: rgb(255, 87, 34);
   padding:100px;
 }
+
 .topBox{
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  text-align: center;
   .reasonBox{
     width: 350px;
     color:orange;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     &:hover{
       color: blue;
     }
     &:active{
       color: green;
     }
-
-  }
+  }  
 }
+
+
 .basicTextBold{
   color:rgb(255, 87, 34);
   display: flex;
@@ -107,6 +122,7 @@ $fontfamily: "Montserrat", sans-serif;
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
+  margin-top: 100 px;
 }
 .basicTextWhite{
   color:white;
@@ -115,6 +131,21 @@ $fontfamily: "Montserrat", sans-serif;
   align-items: center;
   font-family: "Montserrat", sans-serif;
 }
+
+.contentBottom{
+  border-top: 5pt solid #ffffff;
+  padding: 15pt;
+  border-collapse: separate;
+  text-align: left;
+}
+
+.imageSpacer{
+  border-top: 5pt solid #ffffff;
+  padding: 50pt;
+  border-collapse: separate;
+  text-align: left;
+}
+
 #search-bar {
   margin-bottom: 20px;
 

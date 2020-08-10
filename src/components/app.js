@@ -121,7 +121,7 @@ const Welcome = (props) => {
         >Who's Down
         </h1>
         <h1 style={{
-          color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Montserrat', marginBottom: 60, marginLeft: 10, fontSize: 30,
+          color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Open Sans', fontWeight: 'light', marginBottom: 60, marginLeft: 10, fontSize: 30,
         }}
         > Spontaneity Organized.
         </h1>
@@ -131,12 +131,28 @@ const Welcome = (props) => {
 
         <div className="imagine">Imagine a Campus Where...</div> {/* this style is ugly don't use this just wanted to show you an example */}
         <div className="topBox" data-aos="fade-in" data-aos-duration="2000">
-          <div className="reasonBox"><p className="basicText">No commitment is necessary to meet new people.</p></div>
-          <div className="reasonBox"><p className="basicText">A user-friendly interface shows what’s happening on campus right now.</p></div>
-          <div className="reasonBox"><p className="basicText">People, not organizations, create events.</p></div>
+          <div className="reasonBox">
+            <img className="icon" src="https://live.staticflickr.com/65535/50211873491_d76bacba51_q.jpg" alt="No_Commitment_Necessary_Icon" />
+            <div className="contentBottom"> </div>
+            <p className="basicText">No commitment is necessary to meet new people.</p>
+          </div>
+          <div className="reasonBox">
+            <img className="icon" src="https://live.staticflickr.com/65535/50211873611_bc226cd5e0_q.jpg" alt="User_Friendly_Interface_Icon" />
+            <div className="contentBottom"> </div>
+            <p className="basicText">A user-friendly interface shows what’s happening on campus right now.</p>
+          </div>
+          <div className="reasonBox">
+            <img className="icon" src="https://live.staticflickr.com/65535/50211346628_3040cda11e_q.jpg" alt="People_Not_Organizations_Icon" />
+            <div className="contentBottom"> </div>
+            <p className="basicText">People, not organizations, create events.</p>
+          </div>
         </div>
 
-        <img className="image" src="https://live.staticflickr.com/65535/50201520242_9bdce03c13_b.jpg" alt="whosdowninfographic" />
+        <div>
+          <div className="imageSpacer"> </div>
+          <img className="image" src="https://live.staticflickr.com/65535/50201520242_9bdce03c13_b.jpg" alt="whosdowninfographic" />
+          <div className="imageSpacer"> </div>
+        </div>
 
         <div className="appDesc" data-aos="zoom-in">
           <div className="topBox"> <p className="basicTextBoldWhite">The meaningful connections of the ‘24s don’t have to be another casualty of COVID-19.</p></div>
