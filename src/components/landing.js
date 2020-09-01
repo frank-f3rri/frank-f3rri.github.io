@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import '../style.scss';
+import Infographic1 from '../img/mockups/article_graphic_1.png';
+import Infographic2 from '../img/mockups/article_graphic_2.png';
+import Infographic3 from '../img/mockups/infographic.png';
+import AppStoreLogo from '../img/app_store.png';
 
 class Landing extends Component {
   render() {
@@ -21,7 +25,7 @@ class Landing extends Component {
         <div className="mainPage">
 
           <div className="imagine">Imagine a Campus Where...</div> {/* this style is ugly don't use this just wanted to show you an example */}
-          <div className="topBox" data-aos="fade-in" data-aos-duration="2000">
+          <div className="topBox imagineReasons" data-aos="fade-in" data-aos-duration="2000">
             <div className="reasonBox">
               <img className="icon" src="https://live.staticflickr.com/65535/50211873491_d76bacba51_q.jpg" alt="No_Commitment_Necessary_Icon" />
               <div className="contentBottom"> </div>
@@ -39,10 +43,16 @@ class Landing extends Component {
             </div>
           </div>
 
-          <div>
-            <div className="imageSpacer"> </div>
-            <img className="image" src="https://live.staticflickr.com/65535/50201520242_9bdce03c13_b.jpg" alt="whosdowninfographic" />
-            <div className="imageSpacer"> </div>
+          <div className="infographicContainer">
+            <img src={Infographic1} alt="whosdowninfographic" />
+          </div>
+
+          <div className="infographicContainer">
+            <img src={Infographic2} alt="whosdowninfographic" />
+          </div>
+
+          <div className="infographicContainer">
+            <img src={Infographic3} alt="whosdowninfographic" />
           </div>
 
           <div className="appDesc" data-aos="zoom-in">
@@ -58,7 +68,7 @@ class Landing extends Component {
             </div>
           </div>
 
-          <div className="topBox">
+          <div className="appFeatures topBox">
 
             <div className="reasonBox" data-aos="fade-left">
               <p className="basicTextBold">Geographically and Systematically View Events Near You</p>
@@ -78,8 +88,17 @@ class Landing extends Component {
               <p className="basicTextBold">Manage Remote Events</p>
 
               <p className="basicText">We support in-person and virtual events, helping students keep track of Zoom links and in-person gatherings to connect with the events that matter to them.</p>
-
             </div>
+          </div>
+          <div className="downloadContainer">
+            <h1 style={{
+              fontFamily: 'Pacifico', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 40, marginBottom: 25, fontSize: 80,
+            }}
+            >Who's Down
+            </h1>
+            <a href="https://apps.apple.com/us/app/id1527341310">
+              <img className="appStoreLogo" src={AppStoreLogo} alt="img" />
+            </a>
           </div>
         </div>
       </div>

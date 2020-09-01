@@ -6,7 +6,7 @@ import '../style.scss';
 class Footer extends Component {
   render() {
     return (
-      <div className="footerContainer">
+      <div className="container footerContainer">
         <nav>
           <ul className="footerBar">
             <li><NavLink className="footerItem" to="/legal"> Legal </NavLink></li>
