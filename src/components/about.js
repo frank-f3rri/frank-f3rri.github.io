@@ -3,29 +3,29 @@ import '../style.scss';
 import anjaliPhoto from '../img/team/anjali_c.png';
 import arjunPhoto from '../img/team/arjun_b.png';
 import sihaoPhoto from '../img/team/sihao_h.png';
-// import aarishPhoto from '../img/team/aarish_i.png';
+import aarishPhoto from '../img/team/aarish_i.png';
 import bellaPhoto from '../img/team/bella_j.png';
 import weilingPhoto from '../img/team/weiling_h.png';
 import jenniferPhoto from '../img/team/jennifer_q.png';
 import abhiPhoto from '../img/team/abhi_k.png';
-import temp from '../img/team/temp.png';
+// import temp from '../img/team/temp.png';
 
 class About extends Component {
   render() {
     const rowOneData = [
-      {
-        photo: anjaliPhoto,
-        name: 'Anjali Chikkula',
-        position: 'User Acquisition',
-        details: 'Investment Banking Analyst,',
-        location: 'Evercore',
-      },
       {
         photo: arjunPhoto,
         name: 'Arjun Bhatt',
         position: 'Founder',
         details: 'Medical Student,',
         location: 'Brody School of Medicine',
+      },
+      {
+        photo: anjaliPhoto,
+        name: 'Anjali Chikkula',
+        position: 'User Acquisition',
+        details: 'Investment Banking Analyst,',
+        location: 'Evercore',
       },
       {
         photo: sihaoPhoto,
@@ -35,7 +35,7 @@ class About extends Component {
         location: 'Dartmouth College',
       },
       {
-        photo: temp,
+        photo: aarishPhoto,
         name: 'Aarish Iyer',
         position: 'Backend Architect',
         details: 'Software Engineer,',
