@@ -56,7 +56,11 @@ class Landing extends Component {
           </div>
 
           <div className="appDesc" data-aos="zoom-in">
-            <div className="topBox"> <p className="basicTextBoldWhite">The meaningful connections of the ‘24s don’t have to be another casualty of COVID-19.</p></div>
+            <div className="topBox connectionsDesc">
+              <p className="basicTextBoldWhite">
+                The meaningful connections of the ‘24s don’t have to be another casualty of COVID-19.
+              </p>
+            </div>
             <div className="topBox">
               <p className="basicTextWhite">
                 Featuring hard event capacity limits that prevent discovery of full events,
@@ -91,10 +95,8 @@ class Landing extends Component {
             </div>
           </div>
           <div className="downloadContainer">
-            <h1 style={{
-              fontFamily: 'Pacifico', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 40, marginBottom: 25, fontSize: 80,
-            }}
-            >Who's Down
+            <h1 className="styledTitle">
+              Who's Down
             </h1>
             <a href="https://apps.apple.com/us/app/id1527341310">
               <img className="appStoreLogo" src={AppStoreLogo} alt="img" />
