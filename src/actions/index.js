@@ -43,7 +43,7 @@ export function createEvent(event, debug = true) {
 export function collectUserEmail(email) {
   console.log(email);
   return (dispatch) => {
-    axios.post(`${ROOT_URL}/collectUserEmail`, email)
+    axios.post(`${ROOT_URL}/collectAndroidUserEmail`, email)
       .then((response) => {
         dispatch({ type: ActionTypes.collectUserEmail, payload: response });
       })
