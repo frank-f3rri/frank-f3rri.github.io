@@ -38,8 +38,8 @@ class About extends Component {
         photo: aarishPhoto,
         name: 'Aarish Iyer',
         position: 'Backend Architect',
-        details: 'Software Engineer,',
-        location: 'Amazon',
+        details: 'Computer Science Masters,',
+        location: 'Dartmouth College',
       },
     ];
 
