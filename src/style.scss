@@ -407,6 +407,43 @@ $fontfamily: "Montserrat", sans-serif;
   font-size: 80;
 }
 
+.submitButton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  color: #f4511e;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: darkorange;
+  }
+}
+
+.emailForm input {
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.Toastify__toast--default {
+  color: #f4511e;
+}
+
+.Toastify__progress-bar--default {
+  color: #f4511e;
+}
+
 //About CSS
 .teamRow {
   display: flex;

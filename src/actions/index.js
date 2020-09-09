@@ -10,6 +10,7 @@ export const ActionTypes = {
   DECREMENT: 'DECREMENT',
   fetchEvents: 'fetchEvents',
   createEvent: 'createEvent',
+  collectUserEmail: 'collectUserEmail',
 };
 
 export function fetchEvents(debug = false) {
@@ -35,6 +36,19 @@ export function createEvent(event, debug = true) {
       })
       .catch((error) => {
         console.log('error!', error, error.response);
+      });
+  };
+}
+
+export function collectUserEmail(email) {
+  console.log(email);
+  return (dispatch) => {
+    axios.post(`${ROOT_URL}/collectUserEmail`, email)
+      .then((response) => {
+        dispatch({ type: ActionTypes.collectUserEmail, payload: response });
+      })
+      .catch((error) => {
+        console.log('error', error, error.response);
       });
   };
 }
