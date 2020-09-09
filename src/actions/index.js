@@ -1,6 +1,7 @@
 // keys for actiontypes
 
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const ROOT_URL = 'https://project-who-s-down-api.herokuapp.com/api/';
 
@@ -41,14 +42,34 @@ export function createEvent(event, debug = true) {
 }
 
 export function collectUserEmail(email) {
-  console.log(email);
+  const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjIyNDRmNjY0YTQ5YzAwMzg0ZTI2MTMiLCJpYXQiOjE1OTYwODEzOTkxNDl9.6xSO69MmqKFM5KEDl_SP9YdEHm01X4PlIN1LLolcSxw';
   return (dispatch) => {
-    axios.post(`${ROOT_URL}/collectAndroidUserEmail`, email)
+    axios.post(`${ROOT_URL}/collectAndroidUserEmail`, email, { headers: { authorization: token } })
       .then((response) => {
-        dispatch({ type: ActionTypes.collectUserEmail, payload: response });
+        console.log(response);
+        dispatch({ type: ActionTypes.collectUserEmail, payload: response.data.message });
+        toast(response.data.message, {
+          position: 'bottom-right',
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       })
       .catch((error) => {
         console.log('error', error, error.response);
+        dispatch({ type: ActionTypes.collectUserEmail, payload: error.response.data.message });
+        toast(error.response.data.message, {
+          position: 'bottom-right',
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       });
   };
 }

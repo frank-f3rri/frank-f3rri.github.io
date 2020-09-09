@@ -3,9 +3,11 @@
 import { combineReducers } from 'redux';
 
 import EventReducer from './event-reducer';
+import LandingPageReducer from './landing-page-reducer';
 
 const rootReducer = combineReducers({
   event: EventReducer,
+  landingPage: LandingPageReducer,
 });
 
 export default rootReducer;

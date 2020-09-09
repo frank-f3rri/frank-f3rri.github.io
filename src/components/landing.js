@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../style.scss';
 import Infographic1 from '../img/mockups/article_graphic_1.png';
@@ -33,23 +35,13 @@ class Landing extends Component {
       email: this.state.email,
     };
 
-    collectUserEmail(userEmail);
+    this.props.collectUserEmail(userEmail);
     this.setState({
       email: '',
     });
   }
 
   render() {
-    const notifyEmailSubmit = () => toast('Thanks for your interest! You’ll be the first to know about our Google Play release!', {
-      position: 'bottom-right',
-      autoClose: 5000,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
-
     return (
       <div>
         <div className="titleBox" data-aos="zoom-out-down" data-aos-duration="2000">
@@ -156,7 +148,7 @@ class Landing extends Component {
                 placeholder="Enter Your Email ..."
                 value={this.state.email}
               />
-              <input className="submitButton" type="submit" value="Submit" onClick={notifyEmailSubmit} />
+              <input className="submitButton" type="submit" value="Submit" />
             </form>
             <ToastContainer
               position="bottom-right"
@@ -176,4 +168,10 @@ class Landing extends Component {
   }
 }
 
-export default Landing;
+const mapStateToProps = (state) => ({
+  emailResponse: state.landingPage.emailResponse,
+});
+
+export default withRouter(
+  connect(mapStateToProps, { collectUserEmail })(Landing),
+);
