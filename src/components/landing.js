@@ -1,12 +1,55 @@
 import React, { Component } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../style.scss';
 import Infographic1 from '../img/mockups/article_graphic_1.png';
 import Infographic2 from '../img/mockups/article_graphic_2.png';
 import Infographic3 from '../img/mockups/infographic.png';
 import AppStoreLogo from '../img/app_store.png';
+import { collectUserEmail } from '../actions';
 
 class Landing extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: '',
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({
+      email: event.target.value,
+    });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    console.log(this.state.email);
+
+    const userEmail = {
+      email: this.state.email,
+    };
+
+    collectUserEmail(userEmail);
+    this.setState({
+      email: '',
+    });
+  }
+
   render() {
+    const notifyEmailSubmit = () => toast('Thanks for your interest! You’ll be the first to know about our Google Play release!', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
     return (
       <div>
         <div className="titleBox" data-aos="zoom-out-down" data-aos-duration="2000">
@@ -101,6 +144,31 @@ class Landing extends Component {
             <a href="https://apps.apple.com/us/app/id1527341310">
               <img className="appStoreLogo" src={AppStoreLogo} alt="img" />
             </a>
+            <div className="footerBar">
+              <h1 className="basicTextBoldWhite">
+                On Android? Leave your email so we can notify you when we release on the Play store!
+              </h1>
+            </div>
+            <form className="emailForm" onSubmit={this.handleSubmit}>
+              <input
+                type="text"
+                onChange={this.handleChange}
+                placeholder="Enter Your Email ..."
+                value={this.state.email}
+              />
+              <input className="submitButton" type="submit" value="Submit" onClick={notifyEmailSubmit} />
+            </form>
+            <ToastContainer
+              position="bottom-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss={false}
+              draggable
+              pauseOnHover
+            />
           </div>
         </div>
       </div>
