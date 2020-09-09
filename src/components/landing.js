@@ -137,7 +137,7 @@ class Landing extends Component {
               <p className="basicText">We support in-person and virtual events, helping students keep track of Zoom links and in-person gatherings to connect with the events that matter to them.</p>
             </div>
           </div>
-          <div className="downloadContainer">
+          <div className="downloadContainer" id="download">
             <h1 className="styledTitle">
               Who's Down
             </h1>

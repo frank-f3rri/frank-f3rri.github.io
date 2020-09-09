@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter, NavLink } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
+
 import '../style.scss';
 
 class Nav extends Component {
@@ -10,6 +12,7 @@ class Nav extends Component {
           <ul className="navBar">
             <li><NavLink className="navItem" exact to="/"> Home </NavLink></li>
             <li><NavLink className="navItem" to="/about"> About </NavLink></li>
+            <li><NavHashLink className="navItemDownload" smooth to="/#download"> Download </NavHashLink></li>
             <li><a className="donateItem" href="https://www.buymeacoffee.com/whosdown"><span> Donate! </span> </a></li>
           </ul>
         </nav>
