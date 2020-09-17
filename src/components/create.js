@@ -20,7 +20,6 @@ import { API_KEY_GEOCODE } from '../../env';
 class Create extends Component {
   constructor(props) {
     super(props);
-    console.log('create getting called!');
 
     this.state = {
       mounted: false,
@@ -44,6 +43,7 @@ class Create extends Component {
       address: null,
     };
 
+    // this.geoLocate = this.geoLocate.bind(this);
 
     this.setState({ defaultState: this.state });
     Geocode.setApiKey(API_KEY_GEOCODE);
@@ -93,8 +93,6 @@ class Create extends Component {
       skillLevel: this.state.skillLevel,
       startTime: new Date(this.state.startTime),
       endTime: new Date(this.state.endTime),
-      latitude: this.state.latitude,
-      longitude: this.state.longitude,
     };
     console.log('this is your submitted event:', createdEvent);
     console.log('this is our start time type', typeof (this.state.startTime));
@@ -123,6 +121,10 @@ class Create extends Component {
     );
   }
 
+  // geoLocate() {
+  //
+  // }
+
   renderPasteBox = () => {
     return (
       <form onSubmit={this.handleSubmit}>
@@ -138,8 +140,7 @@ class Create extends Component {
   renderLocationPicker = () => {
     return (
       <div>
-        <div style={{ height: '700px', width: '700px' }}>
-          {this.state.address && (<div>Location: {this.state.address}</div>)}
+        <div style={{ height: '500px', width: '500px' }}>
           <GoogleMapReact
             bootstrapURLKeys={{ key: API_KEY_GEOCODE }}
             defaultCenter={this.state.center}
@@ -160,52 +161,59 @@ class Create extends Component {
 
   renderCreateEventForm = () => {
     return (
-      <form onSubmit={this.handleCreate}>
-        <label>
-          Event Title:
-          <input type="text" value={this.state.title} onChange={(event) => this.handleChange(event, 'title')} />
-        </label>
-        <br />
-        <label>
-          Event Description:
-          <input type="text" value={this.state.description} onChange={(event) => this.handleChange(event, 'description')} />
-        </label>
-        <br />
-        <label htmlFor="cat">Choose a category:</label>
-        <select id="category" name="category" onChange={(event) => this.handleChange(event, 'category')}>
-          <option value="nightlife">Nightlife</option>
-          <option value="culture">Culture</option>
-          <option value="educational">Educational</option>
-          <option value="food">Food</option>
-          <option value="sport">Sport</option>
-        </select>
-        <br />
-        <label htmlFor="skill">Choose a skill level:</label>
-        <select id="category" name="category" onChange={(event) => this.handleChange(event, 'skillLevel')}>
-          <option value="casual">Casual</option>
-          <option value="amateur">Amateur</option>
-          <option value="pro">Professional</option>
-        </select>
-        <br />
-        <label>
-          Start Time:
-          <input type="datetime-local" value={this.state.startTime} onChange={(event) => this.handleChange(event, 'startTime')} />
-        </label>
-        <label>
-          End Time:
-          <input type="datetime-local" value={this.state.endTime} onChange={(event) => this.handleChange(event, 'endTime')} />
-        </label>
-        {this.renderLocationPicker()}
-        <input type="submit" value="Submit" />
-      </form>
+      <div className="createEventFormContainer">
+        <form className="createEventForm" onSubmit={this.handleCreate}>
+          <label>
+            Event Title:
+            <input type="text" value={this.state.title} onChange={(event) => this.handleChange(event, 'title')} />
+          </label>
+          <label>
+            Event Description:
+            <input type="text" value={this.state.description} onChange={(event) => this.handleChange(event, 'description')} />
+          </label>
+          <label htmlFor="cat">Choose a category:</label>
+          <select id="category" name="category" onChange={(event) => this.handleChange(event, 'category')}>
+            <option value="nightlife">Nightlife</option>
+            <option value="culture">Culture</option>
+            <option value="educational">Educational</option>
+            <option value="food">Food</option>
+            <option value="sport">Sport</option>
+          </select>
+          <br />
+          <label htmlFor="skill">Choose a skill level:</label>
+          <select id="category" name="category" onChange={(event) => this.handleChange(event, 'skillLevel')}>
+            <option value="casual">Casual</option>
+            <option value="amateur">Amateur</option>
+            <option value="pro">Professional</option>
+          </select>
+          <br />
+          <label>
+            Start Time:
+            <input type="datetime-local" value={this.state.startTime} onChange={(event) => this.handleChange(event, 'startTime')} />
+          </label>
+          <label>
+            End Time:
+            <input type="datetime-local" value={this.state.endTime} onChange={(event) => this.handleChange(event, 'endTime')} />
+          </label>
+          <label>
+            Location:
+            <input type="text" size="40" value={this.state.address} onFocus={this.geoLocate} onChange={(event) => this.handleChange(event, 'address')} />
+          </label>
+          <input className="submitButton" type="submit" value="Submit" />
+        </form>
+        <div>
+          {this.renderLocationPicker()}
+        </div>
+      </div>
     );
   }
 
   render() {
     return (
-      <div>
-        {this.renderPasteBox()}
-        {this.state.showPasteSuccess && (<div>Autoparsing complete!</div>)}
+      <div className="container createContainer">
+        <div className="createTitleContainer">
+          Create an event!
+        </div>
         {this.renderCreateEventForm()}
       </div>
     );
