@@ -16,11 +16,9 @@ import Geocode from 'react-geocode';
 import { createEvent } from '../actions';
 import { API_KEY_GEOCODE } from '../../env';
 
-
 class Create extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       mounted: false,
       center: {
@@ -35,17 +33,18 @@ class Create extends Component {
       showPasteSuccess: false,
       latitude: null,
       longitude: null,
+      virtual: false,
       // another monstrosity, basically sets the default date to now
       // & puts it in a format the stupid datetime-local html thing can recognize
       // end time is 2 hours from now, to change that change the 2 in this.add2hrs
       startTime: new Date(`${new Date(this.add5min(new Date())).toString().split('GMT')[0]} UTC`).toISOString().split('.')[0],
       endTime: new Date(`${new Date(this.add2hrs(new Date())).toString().split('GMT')[0]} UTC`).toISOString().split('.')[0],
-      address: null,
+      address: '',
     };
 
     // this.geoLocate = this.geoLocate.bind(this);
+    this.handleVirtualToggle = this.handleVirtualToggle.bind(this);
 
-    this.setState({ defaultState: this.state });
     Geocode.setApiKey(API_KEY_GEOCODE);
     Geocode.setLanguage('en');
   }
@@ -93,6 +92,7 @@ class Create extends Component {
       skillLevel: this.state.skillLevel,
       startTime: new Date(this.state.startTime),
       endTime: new Date(this.state.endTime),
+      virtual: this.state.virtual,
     };
     console.log('this is your submitted event:', createdEvent);
     console.log('this is our start time type', typeof (this.state.startTime));
@@ -119,6 +119,12 @@ class Create extends Component {
         console.error(error);
       },
     );
+  }
+
+  handleVirtualToggle = (event) => {
+    this.setState({
+      virtual: !this.state.virtual,
+    });
   }
 
   // geoLocate() {
@@ -158,6 +164,25 @@ class Create extends Component {
     );
   }
 
+  renderLocationInput = () => {
+    if (this.state.virtual) {
+      return (
+        <div>
+          Location:
+          <br />
+          Virtual!
+        </div>
+      );
+    } else {
+      return (
+        <label>
+          Location:
+          <input type="text" size="40" value={this.state.address} onFocus={this.geoLocate} onChange={(event) => this.handleChange(event, 'address')} />
+        </label>
+      );
+    }
+  }
+
 
   renderCreateEventForm = () => {
     return (
@@ -195,10 +220,14 @@ class Create extends Component {
             End Time:
             <input type="datetime-local" value={this.state.endTime} onChange={(event) => this.handleChange(event, 'endTime')} />
           </label>
-          <label>
-            Location:
-            <input type="text" size="40" value={this.state.address} onFocus={this.geoLocate} onChange={(event) => this.handleChange(event, 'address')} />
+          <div>Virtual Event</div>
+          <label className="switch">
+            <div>
+              <input type="checkbox" onClick={(event) => this.handleVirtualToggle(event)} />
+              <span className="slider round" />
+            </div>
           </label>
+          {this.renderLocationInput()}
           <input className="submitButton" type="submit" value="Submit" />
         </form>
         <div>
