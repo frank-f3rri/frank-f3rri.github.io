@@ -34,6 +34,8 @@ class Create extends Component {
       latitude: null,
       longitude: null,
       virtual: false,
+      blitz: true,
+      fake: true,
       // another monstrosity, basically sets the default date to now
       // & puts it in a format the stupid datetime-local html thing can recognize
       // end time is 2 hours from now, to change that change the 2 in this.add2hrs
@@ -44,6 +46,7 @@ class Create extends Component {
 
     // this.geoLocate = this.geoLocate.bind(this);
     this.handleVirtualToggle = this.handleVirtualToggle.bind(this);
+    this.handleBlitzToggle = this.handleBlitzToggle.bind(this);
 
     Geocode.setApiKey(API_KEY_GEOCODE);
     Geocode.setLanguage('en');
@@ -93,6 +96,8 @@ class Create extends Component {
       startTime: new Date(this.state.startTime),
       endTime: new Date(this.state.endTime),
       virtual: this.state.virtual,
+      blitz: this.state.blitz,
+      fake: this.state.fake,
     };
     console.log('this is your submitted event:', createdEvent);
     console.log('this is our start time type', typeof (this.state.startTime));
@@ -124,6 +129,18 @@ class Create extends Component {
   handleVirtualToggle = (event) => {
     this.setState({
       virtual: !this.state.virtual,
+    });
+  }
+
+  handleBlitzToggle = (event) => {
+    this.setState({
+      blitz: !this.state.blitz,
+    });
+  }
+
+  handleActualEventToggle = (event) => {
+    this.setState({
+      fake: !this.state.fake,
     });
   }
 
@@ -219,6 +236,20 @@ class Create extends Component {
           <label>
             End Time:
             <input type="datetime-local" value={this.state.endTime} onChange={(event) => this.handleChange(event, 'endTime')} />
+          </label>
+          <div>Campus Blitz</div>
+          <label className="switch">
+            <div>
+              <input type="checkbox" onClick={(event) => this.handleBlitzToggle(event)} defaultChecked />
+              <span className="slider round" />
+            </div>
+          </label>
+          <div>Actual Event</div>
+          <label className="switch">
+            <div>
+              <input type="checkbox" onClick={(event) => this.handleActualEventToggle(event)} />
+              <span className="slider round" />
+            </div>
           </label>
           <div>Virtual Event</div>
           <label className="switch">
