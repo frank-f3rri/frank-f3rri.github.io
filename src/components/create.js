@@ -93,6 +93,7 @@ class Create extends Component {
       startTime: new Date(this.state.startTime),
       endTime: new Date(this.state.endTime),
       virtual: this.state.virtual,
+      maxCapacity: 999,
     };
     console.log('this is your submitted event:', createdEvent);
     console.log('this is our start time type', typeof (this.state.startTime));
