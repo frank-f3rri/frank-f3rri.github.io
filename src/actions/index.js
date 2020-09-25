@@ -28,7 +28,8 @@ export function fetchEvents(debug = false) {
 }
 
 export function createEvent(event, debug = true) {
-  const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjVkMGYwNDkyNDNhMzAwMzg0YTA4YTYiLCJpYXQiOjE2MDA1MzY4NTUwMDJ9.xxxddYVYy2xWIvOR62Q8KqWFnuWxHiVmWjurX8s9GKM';
+  // const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjIyNDRmNjY0YTQ5YzAwMzg0ZTI2MTMiLCJpYXQiOjE1OTYwODEzOTkxNDl9.6xSO69MmqKFM5KEDl_SP9YdEHm01X4PlIN1LLolcSxw';
+  const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjYwM2U5NzZjMzZmODAwMzgzNDYxMWQiLCJpYXQiOjE2MDAxNDM2MTYwNTV9.jwDSTN3NM9t8p6hl8DGDvAF23mFX6yKK01qHyvJr9YQ';
   return (dispatch) => {
     axios.post(`${ROOT_URL}/newEvent`, event, { headers: { authorization: token } })
       .then((response) => {
@@ -60,7 +61,8 @@ export function createEvent(event, debug = true) {
 }
 
 export function collectUserEmail(email) {
-  const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjIyNDRmNjY0YTQ5YzAwMzg0ZTI2MTMiLCJpYXQiOjE1OTYwODEzOTkxNDl9.6xSO69MmqKFM5KEDl_SP9YdEHm01X4PlIN1LLolcSxw';
+  // const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjIyNDRmNjY0YTQ5YzAwMzg0ZTI2MTMiLCJpYXQiOjE1OTYwODEzOTkxNDl9.6xSO69MmqKFM5KEDl_SP9YdEHm01X4PlIN1LLolcSxw';
+  const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjYwM2U5NzZjMzZmODAwMzgzNDYxMWQiLCJpYXQiOjE2MDAxNDM2MTYwNTV9.jwDSTN3NM9t8p6hl8DGDvAF23mFX6yKK01qHyvJr9YQ';
   return (dispatch) => {
     axios.post(`${ROOT_URL}/collectAndroidUserEmail`, email, { headers: { authorization: token } })
       .then((response) => {
