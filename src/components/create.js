@@ -13,6 +13,7 @@ import { connect } from 'react-redux';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import GoogleMapReact from 'google-map-react';
 import Geocode from 'react-geocode';
+import { ToastContainer } from 'react-toastify';
 import { createEvent } from '../actions';
 import { API_KEY_GEOCODE } from '../../env';
 
@@ -34,6 +35,9 @@ class Create extends Component {
       latitude: null,
       longitude: null,
       virtual: false,
+      blitz: true,
+      fake: true,
+      maxCapacity: 10,
       // another monstrosity, basically sets the default date to now
       // & puts it in a format the stupid datetime-local html thing can recognize
       // end time is 2 hours from now, to change that change the 2 in this.add2hrs
@@ -44,6 +48,7 @@ class Create extends Component {
 
     // this.geoLocate = this.geoLocate.bind(this);
     this.handleVirtualToggle = this.handleVirtualToggle.bind(this);
+    this.handleBlitzToggle = this.handleBlitzToggle.bind(this);
 
     Geocode.setApiKey(API_KEY_GEOCODE);
     Geocode.setLanguage('en');
@@ -83,6 +88,8 @@ class Create extends Component {
   }
 
   handleCreate = (event) => {
+    const maxCapacityValue = (this.state.virtual === true) ? 999 : this.state.maxCapacity;
+
     const createdEvent = {
       eventTitle: this.state.title,
       description: this.state.description,
@@ -93,7 +100,9 @@ class Create extends Component {
       startTime: new Date(this.state.startTime),
       endTime: new Date(this.state.endTime),
       virtual: this.state.virtual,
-      maxCapacity: 999,
+      blitz: this.state.blitz,
+      fake: this.state.fake,
+      maxCapacity: maxCapacityValue,
     };
     console.log('this is your submitted event:', createdEvent);
     console.log('this is our start time type', typeof (this.state.startTime));
@@ -125,6 +134,18 @@ class Create extends Component {
   handleVirtualToggle = (event) => {
     this.setState({
       virtual: !this.state.virtual,
+    });
+  }
+
+  handleBlitzToggle = (event) => {
+    this.setState({
+      blitz: !this.state.blitz,
+    });
+  }
+
+  handleActualEventToggle = (event) => {
+    this.setState({
+      fake: !this.state.fake,
     });
   }
 
@@ -184,6 +205,20 @@ class Create extends Component {
     }
   }
 
+  renderMaxCapacityInput = () => {
+    if (this.state.virtual) {
+      return (
+        <div> </div>
+      );
+    } else {
+      return (
+        <label>
+          Max Capacity:
+          <input type="text" size="20" value={this.state.maxCapacity} onChange={(event) => this.handleChange(event, 'maxCapacity')} />
+        </label>
+      );
+    }
+  }
 
   renderCreateEventForm = () => {
     return (
@@ -191,11 +226,11 @@ class Create extends Component {
         <form className="createEventForm" onSubmit={this.handleCreate}>
           <label>
             Event Title:
-            <input type="text" value={this.state.title} onChange={(event) => this.handleChange(event, 'title')} />
+            <input type="text" size="40" value={this.state.title} onChange={(event) => this.handleChange(event, 'title')} />
           </label>
           <label>
             Event Description:
-            <input type="text" value={this.state.description} onChange={(event) => this.handleChange(event, 'description')} />
+            <textarea id="eventDescription" wrap="soft" cols="40" type="text" value={this.state.description} onChange={(event) => this.handleChange(event, 'description')} />
           </label>
           <label htmlFor="cat">Choose a category:</label>
           <select id="category" name="category" onChange={(event) => this.handleChange(event, 'category')}>
@@ -221,6 +256,20 @@ class Create extends Component {
             End Time:
             <input type="datetime-local" value={this.state.endTime} onChange={(event) => this.handleChange(event, 'endTime')} />
           </label>
+          <div>Campus Blitz</div>
+          <label className="switch">
+            <div>
+              <input type="checkbox" onClick={(event) => this.handleBlitzToggle(event)} defaultChecked />
+              <span className="slider round" />
+            </div>
+          </label>
+          <div>Actual Event</div>
+          <label className="switch">
+            <div>
+              <input type="checkbox" onClick={(event) => this.handleActualEventToggle(event)} />
+              <span className="slider round" />
+            </div>
+          </label>
           <div>Virtual Event</div>
           <label className="switch">
             <div>
@@ -229,11 +278,23 @@ class Create extends Component {
             </div>
           </label>
           {this.renderLocationInput()}
+          {this.renderMaxCapacityInput()}
           <input className="submitButton" type="submit" value="Submit" />
         </form>
         <div>
           {this.renderLocationPicker()}
         </div>
+        <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss={false}
+          draggable
+          pauseOnHover
+        />
       </div>
     );
   }
