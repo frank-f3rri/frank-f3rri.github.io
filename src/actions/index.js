@@ -34,9 +34,27 @@ export function createEvent(event, debug = true) {
       .then((response) => {
         if (debug) { console.log('this is the response we got from the server', response); }
         dispatch({ type: ActionTypes.fetchEvents, payload: response });
+        toast(response.data.message, {
+          position: 'bottom-right',
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       })
       .catch((error) => {
         console.log('error!', error, error.response);
+        toast(error.response.data, {
+          position: 'bottom-right',
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       });
   };
 }
