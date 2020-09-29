@@ -31,6 +31,7 @@ class Create extends Component {
       pastebox: '',
       defaultState: null,
       category: 'nightlife',
+      skillLevel: 'casual',
       showPasteSuccess: false,
       latitude: null,
       longitude: null,
@@ -242,7 +243,7 @@ class Create extends Component {
           </select>
           <br />
           <label htmlFor="skill">Choose a skill level:</label>
-          <select id="category" name="category" onChange={(event) => this.handleChange(event, 'skillLevel')}>
+          <select id="skillLevel" name="skillLevel" onChange={(event) => this.handleChange(event, 'skillLevel')}>
             <option value="casual">Casual</option>
             <option value="amateur">Amateur</option>
             <option value="pro">Professional</option>
