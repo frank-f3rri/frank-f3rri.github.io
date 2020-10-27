@@ -41,7 +41,7 @@ const App = (props) => {
           <Nav />
           <Switch>
             <Route exact path="/" component={Landing} />
-            <Route path="/whatsup" component={Explore} />
+            <Route path="/map" component={Explore} />
             <Route path="/create" component={Create} />
             <Route path="/legal" component={Legal} />
             <Route path="/about" component={About} />
