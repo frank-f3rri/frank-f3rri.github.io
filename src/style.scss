@@ -661,3 +661,85 @@ input:checked + .slider:before {
     font-weight: 'extra-light';
     color: '#005975';
 }
+
+// Map CSS
+.explorePageContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  align-items: center;
+  overflow: auto;
+}
+
+.eventListContainer {
+  flex-basis: 20%;
+  background-color: #ff5722;
+  height: 80vh;
+  display: flex;
+  overflow: scroll;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.eventListItem {
+  flex-basis: 10%;
+  height: 100px;
+  width: 90%;
+  background-color: #fff;
+  opacity: 90%;
+  font-size: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2px;
+  margin: 5px;
+  padding: 2px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.eventListItem:hover {
+  transform: scale(1.05);
+}
+
+.eventListTitle {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.mapContainer {
+  flex-basis: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exploreMap {
+  height: 80vh;
+  width: 70vw;
+}
+
+.mapPinPopup {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.mapPinTitle {
+  font-weight: bold;
+  font-size: 12px;
+}

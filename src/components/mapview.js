@@ -11,14 +11,7 @@ import { connect } from 'react-redux';
 import GoogleMapReact from 'google-map-react';
 import { fetchEvents } from '../actions';
 import { API_KEY } from '../../env';
-
-const categoryToURL = new Map([
-  ['nightlife', 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/silly-bird-ernie-echols.jpg'],
-  ['culture', 'https://pqspb.org/bpqpoq/wp-content/uploads/2018/10/bpq-blja-cm-2018.jpg'],
-  ['educational', 'https://upload.wikimedia.org/wikipedia/en/1/17/Festo_SmartBird.jpg'],
-  ['game', 'https://www.allaboutbirds.org/news/wp-content/uploads/2009/04/BurOwls-play.jpg'],
-  ['sport', 'https://previews.123rf.com/images/maryvalery/maryvalery1605/maryvalery160500186/57192838-strong-eagle-athlete-fitness-bird-.jpg'],
-  ['food', 'https://i.pinimg.com/originals/1f/31/b2/1f31b2490c91b5a95550d899387c06d6.jpg']]);
+import locationDot from '../img/map_dot.png';
 
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -31,9 +24,9 @@ class MapView extends Component {
       mounted: false,
       center: {
         lat: 43.7044,
-        lng: 72.2887,
+        lng: -72.2887,
       },
-      zoom: 3,
+      zoom: 14,
       activeID: '',
     };
 
@@ -66,46 +59,65 @@ class MapView extends Component {
     this.setState({ activeID: '' });
   }
 
-  render() {
-    return (
-      <div>
-        <div style={{ height: '1000px', width: '1000px' }}>
-          <GoogleMapReact
-            bootstrapURLKeys={{ key: API_KEY }}
-            defaultCenter={this.state.center}
-            defaultZoom={this.state.zoom}
-            hoverDistance={50}
-            distanceToMouse={this.distanceToMouse}
-            onChildMouseEnter={this.onMapChildHover}
-            onChildMouseLeave={this.noMoreHover}
 
+  render() {
+    const locations = this.props.eventList.all.map((event) => {
+      if (!event.virtual) {
+        return (
+          <div
+            key={event.id}
+            lat={event.latitude}
+            lng={event.longitude}
           >
-            {this.props.eventList.all.map((event) => {
-              return (
-                <div
-                  key={event.id}
-                  lat={event.latitude}
-                  lng={event.longitude}
-                >
-                  <img
-                    src={categoryToURL.get(event.category)}
-                    alt=""
-                    height="50px"
-                    width="50px"
-                    text={event.eventTitle}
-                    showMore={() => { this.showMore(event.id); }}
-                  />
-                  {event.id == this.state.activeID && (
-                    <div>
-                      title = {event.eventTitle}
-                      host = {event.hostName}
-                      skillLevel = {event.skillLevel}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </GoogleMapReact>
+            <img
+              src={locationDot}
+              alt=""
+              height="10px"
+              width="10px"
+              text={event.eventTitle}
+              showMore={() => { this.showMore(event.id); }}
+            />
+            {event.id == this.state.activeID && (
+              <div className="mapPinPopup">
+                <div className="mapPinTitle">{event.eventTitle}</div>
+                <div>{event.hostName}</div>
+                <div>{event.skillLevel}</div>
+              </div>
+            )}
+          </div>
+        );
+      } return (<div />);
+    });
+
+    const eventList = this.props.eventList.all.map((event) => {
+      return (
+        <div className="eventListItem">
+          <div className="eventListTitle">{event.eventTitle}</div>
+          <div>{event.hostName}</div>
+        </div>
+      );
+    });
+
+
+    return (
+      <div className="explorePageContainer">
+        <div className="mapContainer">
+          <div className="exploreMap">
+            <GoogleMapReact
+              bootstrapURLKeys={{ key: API_KEY }}
+              defaultCenter={this.state.center}
+              defaultZoom={this.state.zoom}
+              hoverDistance={15}
+              distanceToMouse={this.distanceToMouse}
+              onChildMouseEnter={this.onMapChildHover}
+              onChildMouseLeave={this.noMoreHover}
+            >
+              {locations}
+            </GoogleMapReact>
+          </div>
+        </div>
+        <div className="eventListContainer">
+          {eventList}
         </div>
       </div>
     );
