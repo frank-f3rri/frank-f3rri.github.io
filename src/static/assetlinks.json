@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "om.downatdart.whosdown",
+    "sha256_cert_fingerprints":
+    ["7C:3A:8D:53:3D:C8:05:6E:01:18:87:F5:7F:FD:81:5F:56:9C:F4:62:B6:95:16:56:BD:33:D8:DB:02:F3:9E:16",
+     "70:00:B8:C3:6C:F7:87:D2:E5:39:D3:8F:85:EE:1A:4C:9D:4D:BA:D2:A8:C0:10:27:5E:74:1B:B2:B3:D4:AE:B7"]
+  }
+}]
