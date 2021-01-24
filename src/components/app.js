@@ -20,6 +20,7 @@ import Footer from '../containers/footer';
 import Landing from './Landing';
 import Legal from './Legal';
 import About from './About';
+import Download from './Download';
 
 AOS.init(); // {mirror: true} changes the animations significantly but I think it goes a bit over the top
 
@@ -45,6 +46,7 @@ const App = (props) => {
             <Route path="/create" component={Create} />
             <Route path="/legal" component={Legal} />
             <Route path="/about" component={About} />
+            <Route path="/link/*" component={Download} />
             <Route component={FallBack} />
           </Switch>
           <Footer />
