@@ -235,11 +235,14 @@ class Create extends Component {
           </label>
           <label htmlFor="cat">Choose a category:</label>
           <select id="category" name="category" onChange={(event) => this.handleChange(event, 'category')}>
-            <option value="nightlife">Nightlife</option>
+            <option value="nightlife">Social</option>
             <option value="culture">Culture</option>
             <option value="educational">Educational</option>
             <option value="food">Food</option>
             <option value="sport">Sport</option>
+            <option value="outdoors">Outdoors</option>
+            <option value="professional">Professional</option>
+            <option value="performance">Performance</option>
           </select>
           <br />
           <label htmlFor="skill">Choose a skill level:</label>
