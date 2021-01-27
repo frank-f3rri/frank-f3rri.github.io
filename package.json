@@ -9,7 +9,7 @@
     "start": "NODE_ENV=development webpack-dev-server",
     "winstart": "SET NODE_ENV=development& webpack-dev-server",
     "test": "eslint src/**.js",
-    "build": "yarn clean; NODE_ENV=production webpack --colors",
+    "build": "yarn clean; NODE_ENV=production webpack --colors; cp ROUTER dist/",
     "clean": "rimraf dist",
     "deploy": "yarn build; surge -p dist -d downatdart.me; yarn clean",
     "winbuild": "yarn clean & SET NODE_ENV=production& webpack --colors",
@@ -38,7 +38,7 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.4",
-    "surge": "^0.21.3",
+    "surge": "^0.21.7",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"

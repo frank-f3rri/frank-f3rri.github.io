@@ -1,0 +1,2 @@
+307 /.well-known/assetlinks.json  https://project-who-s-down-api.herokuapp.com/api/deeplink/android
+307 /.well-known/apple-app-site-association  https://project-who-s-down-api.herokuapp.com/api/deeplink/apple
