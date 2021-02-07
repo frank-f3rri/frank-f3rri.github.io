@@ -243,6 +243,7 @@ class Create extends Component {
             <option value="outdoors">Outdoors</option>
             <option value="professional">Professional</option>
             <option value="performance">Performance</option>
+            <option value="game">Game</option>
           </select>
           <br />
           <label htmlFor="skill">Choose a skill level:</label>
