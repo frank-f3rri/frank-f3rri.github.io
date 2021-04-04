@@ -12,14 +12,14 @@ class Legal extends Component {
   render() {
     return (
       <div>
-        <div><div align="center">
+        <div align="center" style={{ marginLeft: '20px', marginRight: '20px' }}>
           <div align="center">
             <div align="center">
               <div align="center">
                 <div align="center">
-                  <div align="center">
-                    TERMS OF USE
-                  </div>
+                  <h2 align="center">
+                    PRIVACY NOTICE
+                  </h2>
                   <div align="center">
                     <a name="_7m5b3xg56u7y" />
                   </div>
@@ -27,7 +27,7 @@ class Legal extends Component {
                     <br />
                   </div>
                   <div align="center">
-                    Last updated August 08, 2020
+                    Last updated January 20, 2021
                   </div>
                 </div>
               </div>
@@ -41,9 +41,13 @@ class Legal extends Component {
                 <br />
               </div>
             </div>
+          </div>
+          <div align="center">
+            <br />
+          </div>
+          <div align="center">
             <div>
-              <a name="_a7mwfgcrtsqn" />
-              AGREEMENT TO TERMS
+              Thank you for choosing to be part of our community at Who's Down LLC ("Company", "we", "us", "our"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at admin@downatdart.com.
             </div>
           </div>
           <div align="center">
@@ -51,18 +55,7 @@ class Legal extends Component {
           </div>
           <div align="center">
             <div>
-              These Terms of Use constitute a legally binding agreement made
-              between you, whether personally or on behalf of an entity
-              (&#8220;you&#8221;) and Who's Down LLC ("Company",
-              &#8220;we&#8221;, &#8220;us&#8221;, or &#8220;our&#8221;),
-              concerning your access to and use of the downatdart.me website as
-              well as any other media form, media channel, mobile website or
-              mobile application related, linked, or otherwise connected thereto
-              (collectively, the &#8220;Site&#8221;). You agree that by accessing
-              the Site, you have read, understood, and agreed to be bound by all
-              of these Terms of Use. IF YOU DO NOT AGREE WITH ALL OF THESE TERMS
-              OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SITE AND
-              YOU MUST DISCONTINUE USE IMMEDIATELY.
+              When you visit our website http://downatdart.me (the "Website"), use our mobile application, as the case may be (the "App") and more generally, use any of our services (the "Services", which include the Website and App), we appreciate that you are trusting us with your personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy notice that you do not agree with, please discontinue use of our Services immediately.
             </div>
           </div>
           <div align="center">
@@ -70,33 +63,7 @@ class Legal extends Component {
           </div>
           <div align="center">
             <div>
-              Supplemental terms and conditions or documents that may be posted
-              on the Site from time to time are hereby expressly incorporated
-              herein by reference. We reserve the right, in our sole discretion,
-              to make changes or modifications to these Terms of Use at any time
-              and for any reason. We will alert you about any changes by updating
-              the &#8220;Last updated&#8221; date of these Terms of Use, and you
-              waive any right to receive specific notice of each such change. It
-              is your responsibility to periodically review these Terms of Use to
-              stay informed of updates. You will be subject to, and will be
-              deemed to have been made aware of and to have accepted, the changes
-              in any revised Terms of Use by your continued use of the Site after
-              the date such revised Terms of Use are posted.
-            </div>
-          </div>
-          <div align="center">
-            <br />
-          </div>
-          <div align="center">
-            <div>
-              The information provided on the Site is not intended for
-              distribution to or use by any person or entity in any jurisdiction
-              or country where such distribution or use would be contrary to law
-              or regulation or which would subject us to any registration
-              requirement within such jurisdiction or country. Accordingly, those
-              persons who choose to access the Site from other locations do so on
-              their own initiative and are solely responsible for compliance with
-              local laws, if and to the extent local laws are applicable.
+              This privacy notice applies to all information collected through our Services (which, as described above, includes our Website and App), as well as, any related services, sales, marketing or events.
             </div>
             <div />
           </div>
@@ -105,23 +72,11 @@ class Legal extends Component {
           </div>
           <div align="center">
             <div>
-              The Site is not tailored to comply with industry-specific
-              regulations (Health Insurance Portability and Accountability Act
-              (HIPAA), Federal Information Security Management Act (FISMA),
-              etc.), so if your interactions would be subjected to such laws, you
-              may not use this Site. You may not use the Site in a way that would
-              violate the Gramm-Leach-Bliley Act (GLBA).
+              Please read this privacy notice carefully as it will help you understand what we do with the information that we collect.
             </div>
           </div>
           <div align="center">
             <br />
-          </div>
-          <div align="center">
-            <div>
-              The Site is intended for users who are at least 18 years old.
-              Persons under the age of 18 are not permitted to use or register
-              for the Site.
-            </div>
           </div>
           <div align="center">
             <br />
@@ -130,9 +85,30 @@ class Legal extends Component {
             <div>
               <br />
             </div>
-            <div>
+            <h2>
               <a name="_4rd71iod99ud" />
-              INTELLECTUAL PROPERTY RIGHTS
+              1. WHAT INFORMATION DO WE COLLECT?
+            </h2>
+          </div>
+          <div align="center">
+            <br />
+          </div>
+          <div align="center">
+            <h4>
+              Personal information you disclose to us
+            </h4>
+          </div>
+          <div align="center">
+            <h6>
+              In Short:  We collect personal information that you provide to us.
+            </h6>
+          </div>
+          <div align="center">
+            <br />
+          </div>
+          <div align="center">
+            <div>
+              We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services (such as by posting messages in our online forums or entering competitions, contests or giveaways) or otherwise when you contact us.
             </div>
           </div>
           <div align="center">
@@ -140,23 +116,7 @@ class Legal extends Component {
           </div>
           <div align="center">
             <div>
-              Unless otherwise indicated, the Site is our proprietary property
-              and all source code, databases, functionality, software, website
-              designs, audio, video, text, photographs, and graphics on the Site
-              (collectively, the &#8220;Content&#8221;) and the trademarks,
-              service marks, and logos contained therein (the
-              &#8220;Marks&#8221;) are owned or controlled by us or licensed to
-              us, and are protected by copyright and trademark laws and various
-              other intellectual property rights and unfair competition laws of
-              the United States, international copyright laws, and international
-              conventions. The Content and the Marks are provided on the Site
-              &#8220;AS IS&#8221; for your information and personal use only.
-              Except as expressly provided in these Terms of Use, no part of the
-              Site and no Content or Marks may be copied, reproduced, aggregated,
-              republished, uploaded, posted, publicly displayed, encoded,
-              translated, transmitted, distributed, sold, licensed, or otherwise
-              exploited for any commercial purpose whatsoever, without our
-              express prior written permission.
+              The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make and the products and features you use. The personal information we collect may include the following:
             </div>
           </div>
           <div align="center">
@@ -164,55 +124,124 @@ class Legal extends Component {
           </div>
           <div align="center">
             <div>
-              Provided that you are eligible to use the Site, you are granted a
-              limited license to access and use the Site and to download or print
-              a copy of any portion of the Content to which you have properly
-              gained access solely for your personal, non-commercial use. We
-              reserve all rights not expressly granted to you in and to the Site,
-              the Content and the Marks.
+              Personal Information Provided by You. We collect names; email addresses; usernames; and other similar information.
+              All personal information that you provide to us must be true, complete and accurate, and you must notify us of any changes to such personal information.
             </div>
           </div>
           <div align="center">
             <br />
           </div>
+          <div align="center">
+            <h4>
+              Information automatically collected
+            </h4>
+          </div>
+          <div align="center">
+            <br />
+          </div>
+          <div align="center">
+            <h6>
+              In Short:  Some information — such as your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our Services.
+            </h6>
+          </div>
+          <div align="center">
+            <br />
+          </div>
+          <div align="center">
+            <div>
+              We automatically collect certain information when you visit, use or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services and other technical information. This information is primarily needed to maintain the security and operation of our Services, and for our internal analytics and reporting purposes.
+              Like many businesses, we also collect information through cookies and similar technologies.
+            </div>
+          </div>
+          <div align="center">
+            <br />
+          </div>
+          <div align="center">
+            The information we collect includes:
+            <ul>
+              <li>Log and Usage Data. Log and usage data is service-related, diagnostic, usage and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address, device information, browser type and settings and information about your activity in the Services (such as the date/time stamps associated with your usage, pages and files viewed, searches and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called 'crash dumps') and hardware settings).</li>
+              <br />
+              <li>Location Data. We collect location data such as information about your device's location, which can be either precise or imprecise. How much information we collect depends on the type and settings of the device you use to access the Services. For example, we may use GPS and other technologies to collect geolocation data that tells us your current location (based on your IP address). You can opt out of allowing us to collect this information either by refusing access to the information or by disabling your Location setting on your device. Note however, if you choose to opt out, you may not be able to use certain aspects of the Services.</li>
+            </ul>
+          </div>
+          <div align="center">
+            <br />
+          </div>
+          <div align="center">
+            <h4>
+              Information collected through our App
+            </h4>
+          </div>
+          <div align="center">
+            <br />
+          </div>
+          <div align="center">
+            <h6>
+              In Short:  We collect information regarding your geolocation, mobile device, push notifications, when you use our App.
+            </h6>
+          </div>
+          <div align="center">
+            <br />
+          </div>
+          <div align="center">
+            If you use our App, we also collect the following information:
+            <ul>
+              <li>Geolocation Information. We may request access or permission to and track location-based information from your mobile device, either continuously or while you are using our App, to provide certain location-based services. If you wish to change our access or permissions, you may do so in your device's settings.</li>
+              <br />
+              <li>Mobile Device Access. We may request access or permission to certain features from your mobile device, including your mobile device's calendar, and other features. If you wish to change our access or permissions, you may do so in your device's settings.</li>
+              <br />
+              <li>Push Notifications. We may request to send you push notifications regarding your account or certain features of the App. If you wish to opt-out from receiving these types of communications, you may turn them off in your device's settings.</li>
+            </ul>
+            This information is primarily needed to maintain the security and operation of our App, for troubleshooting and for our internal analytics and reporting purposes.
+          </div>
+
           <div align="center">
             <div>
               <br />
             </div>
-            <div>
+            <h2>
               <a name="_vhkegautf00d" />
-              USER REPRESENTATIONS
-            </div>
+              2. HOW DO WE USE YOUR INFORMATION?
+            </h2>
             <div>
               <br />
             </div>
           </div>
           <div align="center">
             <div>
-              <div>
-                By using the Site, you represent and warrant that: (1) all
-                registration information you submit will be true, accurate,
-                current, and complete; (2) you will maintain the accuracy of
-                such information and promptly update such registration
-                information as necessary; (3) you have the legal capacity and
-                you agree to comply with these Terms of Use; (4) you are not a
-                minor in the jurisdiction in which you reside; (5) you will not
-                access the Site through automated or non-human means, whether
-                through a bot, script, or otherwise; (6) you will not use the
-                Site for any illegal or unauthorized purpose; and (7) your use
-                of the Site will not violate any applicable law or regulation.
-              </div>
+              <h6>
+                In Short:  We process your information for purposes based on legitimate business interests, the fulfillment of our contract with you, compliance with our legal obligations, and/or your consent.
+              </h6>
             </div>
             <div>
               <br />
             </div>
             <div>
               <div>
-                If you provide any information that is untrue, inaccurate, not
-                current, or incomplete, we have the right to suspend or
-                terminate your account and refuse any and all current or future
-                use of the Site (or any portion thereof).
+                We use personal information collected via our Services for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations. We indicate the specific processing grounds we rely on next to each purpose listed below.
               </div>
+            </div>
+            <div align="center">
+              We use the information we collect or receive:
+              <ul>
+                <li>To facilitate account creation and logon process. If you choose to link your account with us to a third-party account (such as your Google or Facebook account), we use the information you allowed us to collect from those third parties to facilitate account creation and logon process for the performance of the contract.</li>
+                <br />
+                <li>To post testimonials. We post testimonials on our Services that may contain personal information. Prior to posting a testimonial, we will obtain your consent to use your name and the content of the testimonial. If you wish to update, or delete your testimonial, please contact us at admin@downatdart.com and be sure to include your name, testimonial location, and contact information.</li>
+                <br />
+                <li>Request feedback. We may use your information to request feedback and to contact you about your use of our Services.</li>
+                <br />
+                <li>To enable user-to-user communications. We may use your information in order to enable user-to-user communications with each user's consent.</li>
+                <br />
+                <li>To manage user accounts. We may use your information for the purposes of managing our account and keeping it in working order.</li>
+                <br />
+                <li>To send administrative information to you. We may use your personal information to send you product, service and new feature information and/or information about changes to our terms, conditions, and policies.</li>
+                <br />
+                <li>To protect our Services. We may use your information as part of our efforts to keep our Services safe and secure (for example, for fraud monitoring and prevention).</li>
+                <br />
+                <li>To enforce our terms, conditions and policies for business purposes, to comply with legal and regulatory requirements or in connection with our contract.</li>
+                <br />
+                <li>To respond to legal requests and prevent harm. If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.</li>
+              </ul>
             </div>
           </div>
           <div align="center">
@@ -224,22 +253,41 @@ class Legal extends Component {
             </div>
             <div>
               <a name="_esuoutkhaf53" />
-              <div>
-                USER REGISTRATION
-              </div>
+              <h2>
+                3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?
+              </h2>
             </div>
             <div>
               <br />
             </div>
             <div>
-              <div>
-                You may be required to register with the Site. You agree to
-                keep your password confidential and will be responsible for all
-                use of your account and password. We reserve the right to
-                remove, reclaim, or change a username you select if we
-                determine, in our sole discretion, that such username is
-                inappropriate, obscene, or otherwise objectionable.
-              </div>
+              <h6>
+                In Short:  We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations.
+              </h6>
+            </div>
+            <div>
+              We may process or share your data that we hold based on the following legal basis:
+              <ul>
+                <li>Consent: We may process your data if you have given us specific consent to use your personal information for a specific purpose.</li>
+                <br />
+                <li>Legitimate Interests: We may process your data when it is reasonably necessary to achieve our legitimate business interests.</li>
+                <br />
+                <li>Performance of a Contract: Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.</li>
+                <br />
+                <li>Legal Obligations: We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).</li>
+                <br />
+                <li>Vital Interests: We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.</li>
+              </ul>
+            </div>
+            <div align="center">
+              More specifically, we may need to process your data or share your personal information in the following situations:
+              <ul>
+                <li>Business Transfers. We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+                <br />
+                <li>Google Maps Platform APIs. We may share your information with certain Google Maps Platform APIs (e.g., Google Maps API, Place API). To find out more about Google’s Privacy Policy, please refer to this link. We obtain and store on your device ('cache') your location. You may revoke your consent anytime by contacting us at the contact details provided at the end of this document.</li>
+                <br />
+                <li>Other Users. When you share personal information (for example, by posting comments, contributions or other content to the Services) or otherwise interact with public areas of the Services, such personal information may be viewed by all users and may be publicly made available outside the Services in perpetuity. Similarly, other users will be able to view descriptions of your activity, communicate with you within our Services, and view your profile.</li>
+              </ul>
             </div>
           </div>
           <div align="center">
@@ -249,11 +297,23 @@ class Legal extends Component {
             <br />
           </div>
           <div align="center">
-            <div />
             <div>
               <a name="_1voziltdxegg" />
+              <h2>
+                4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?
+              </h2>
+            </div>
+            <div>
+              <br />
+            </div>
+            <div>
+              <h6>
+                In Short:  We may use cookies and other tracking technologies to collect and store your information.
+              </h6>
+            </div>
+            <div>
               <div>
-                PROHIBITED ACTIVITIES
+                We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice.
               </div>
             </div>
             <div>
@@ -261,156 +321,35 @@ class Legal extends Component {
             </div>
             <div>
               <div>
-                You may not access or use the Site for any purpose other than
-                that for which we make the Site available. The Site may not be
-                used in connection with any commercial endeavors except those
-                that are specifically endorsed or approved by us.
+                <br />
               </div>
-            </div>
-            <div>
-              <br />
-            </div>
-            <div>
+              <div>
+                <br />
+              </div>
+              <div>
+                <h2>
+                  5. HOW LONG DO WE KEEP YOUR INFORMATION?
+                </h2>
+              </div>
+              <div>
+                <br />
+              </div>
+              <div>
+                <h6>
+                  In Short:  We keep your information for as long as necessary to fulfill the purposes outlined in this privacy notice unless otherwise required by law.
+
+                </h6>
+              </div>
               <div>
                 <div>
-                  <div>
-                    As a user of the Site, you agree not to:
-                  </div>
-                  <div>
-                    <div>
-                      <br />
-                    </div>
-                  </div>
+                  We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than the period of time in which users have an account with us.
+
                 </div>
+              </div>
+              <div>
                 <div>
-                  1. Systematically retrieve data or other content from the
-                  Site to create or compile, directly or indirectly, a
-                  collection, compilation, database, or directory without
-                  written permission from us.
-                </div>
-                <div>
-                  2. Trick, defraud, or mislead us and other users,
-                  especially in any attempt to learn sensitive account
-                  information such as user passwords.
-                </div>
-                <div>
-                  3. Circumvent, disable, or otherwise interfere with
-                  security-related features of the Site, including features
-                  that prevent or restrict the use or copying of any Content
-                  or enforce limitations on the use of the Site and/or the
-                  Content contained therein.
-                </div>
-                <div>
-                  4. Disparage, tarnish, or otherwise harm, in our opinion,
-                  us and/or the Site.
-                </div>
-                <div>
-                  5. Use any information obtained from the Site in order to
-                  harass, abuse, or harm another person.
-                </div>
-                <div>
-                  6. Make improper use of our support services or submit
-                  false reports of abuse or misconduct.
-                </div>
-                <div>
-                  7. Use the Site in a manner inconsistent with any
-                  applicable laws or regulations.
-                </div>
-                <div>
-                  8. Use the Site to advertise or offer to sell goods and
-                  services.
-                </div>
-                <div>
-                  9. Engage in unauthorized framing of or linking to the
-                  Site.
-                </div>
-                <div>
-                  10. Upload or transmit (or attempt to upload or to
-                  transmit) viruses, Trojan horses, or other material,
-                  including excessive use of capital letters and spamming
-                  (continuous posting of repetitive text), that interferes
-                  with any party&#8217;s uninterrupted use and enjoyment of
-                  the Site or modifies, impairs, disrupts, alters, or
-                  interferes with the use, features, functions, operation, or
-                  maintenance of the Site.
-                </div>
-                <div>
-                  11. Engage in any automated use of the system, such as
-                  using scripts to send comments or messages, or using any
-                  data mining, robots, or similar data gathering and
-                  extraction tools.
-                </div>
-                <div>
-                  12. Delete the copyright or other proprietary rights notice
-                  from any Content.
-                </div>
-                <div>
-                  13. Attempt to impersonate another user or person or use
-                  the username of another user.
-                </div>
-                <div>
-                  14. Sell or otherwise transfer your profile.
-                </div>
-                <div>
-                  15. Upload or transmit (or attempt to upload or to
-                  transmit) any material that acts as a passive or active
-                  information collection or transmission mechanism, including
-                  without limitation, clear graphics interchange formats
-                  (&#8220;gifs&#8221;), 1&#215;1 pixels, web bugs, cookies,
-                  or other similar devices (sometimes referred to as
-                  &#8220;spyware&#8221; or &#8220;passive collection
-                  mechanisms&#8221; or &#8220;pcms&#8221;).
-                </div>
-                <div>
-                  16. Interfere with, disrupt, or create an undue burden on
-                  the Site or the networks or services connected to the Site.
-                </div>
-                <div>
-                  17. Harass, annoy, intimidate, or threaten any of our
-                  employees or agents engaged in providing any portion of the
-                  Site to you.
-                </div>
-                <div>
-                  18. Attempt to bypass any measures of the Site designed to
-                  prevent or restrict access to the Site, or any portion of
-                  the Site.
-                </div>
-                <div>
-                  19. Copy or adapt the Site&#8217;s software, including but
-                  not limited to Flash, PHP, HTML, JavaScript, or other code.
-                </div>
-                <div>
-                  20. Decipher, decompile, disassemble, or reverse engineer
-                  any of the software comprising or in any way making up a
-                  part of the Site.
-                </div>
-                <div>
-                  21. Except as may be the result of standard search engine
-                  or Internet browser usage, use, launch, develop, or
-                  distribute any automated system, including without
-                  limitation, any spider, robot, cheat utility, scraper, or
-                  offline reader that accesses the Site, or using or
-                  launching any unauthorized script or other software.
-                </div>
-                <div>
-                  22. Use a buying agent or purchasing agent to make
-                  purchases on the Site.
-                </div>
-                <div>
-                  23. Make any unauthorized use of the Site, including
-                  collecting usernames and/or email addresses of users by
-                  electronic or other means for the purpose of sending
-                  unsolicited email, or creating user accounts by automated
-                  means or under false pretenses.
-                </div>
-                <div>
-                  24. Use the Site as part of any effort to compete with us
-                  or otherwise use the Site and/or the Content for any
-                  revenue-generating endeavor or commercial enterprise.
-                </div>
-                <div />
-                <div>
-                  <a name="_zbbv9tgty199" />
+                  When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
+
                 </div>
               </div>
               <div>
@@ -421,171 +360,42 @@ class Legal extends Component {
               </div>
               <div>
                 <div>
-                  USER GENERATED CONTRIBUTIONS
+                  <h2>
+                    6. HOW DO WE KEEP YOUR INFORMATION SAFE?
+                  </h2>
+                  <div />
                 </div>
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <div>
-                  The Site does not offer users to submit or post content. We
-                  may provide you with the opportunity to create, submit,
-                  post, display, transmit, perform, publish, distribute, or
-                  broadcast content and materials to us or on the Site,
-                  including but not limited to text, writings, video, audio,
-                  photographs, graphics, comments, suggestions, or personal
-                  information or other material (collectively,
-                  "Contributions"). Contributions may be viewable by other
-                  users of the Site and through third-party websites. As
-                  such, any Contributions you transmit may be treated in
-                  accordance with the Site Privacy Policy. When you create or
-                  make available any Contributions, you thereby represent and
-                  warrant that:
-                </div>
-              </div>
-              <div>
                 <div>
                   <br />
                 </div>
-                <div>
-                  <div>
-                    1. The creation, distribution, transmission, public
-                    display, or performance, and the accessing,
-                    downloading, or copying of your Contributions do not
-                    and will not infringe the proprietary rights, including
-                    but not limited to the copyright, patent, trademark,
-                    trade secret, or moral rights of any third party.
-                    <br />
-                    2. You are the creator and owner of or have the
-                    necessary licenses, rights, consents, releases, and
-                    permissions to use and to authorize us, the Site, and
-                    other users of the Site to use your Contributions in
-                    any manner contemplated by the Site and these Terms of
-                    Use.
-                    <br />
-                    3. You have the written consent, release, and/or
-                    permission of each and every identifiable individual
-                    person in your Contributions to use the name or
-                    likeness of each and every such identifiable individual
-                    person to enable inclusion and use of your
-                    Contributions in any manner contemplated by the Site
-                    and these Terms of Use.
-                    <br />
-                    4. Your Contributions are not false, inaccurate, or
-                    misleading.
-                    <br />
-                    5. Your Contributions are not unsolicited or
-                    unauthorized advertising, promotional materials,
-                    pyramid schemes, chain letters, spam, mass mailings, or
-                    other forms of solicitation.
-                    <br />
-                    6. Your Contributions are not obscene, lewd,
-                    lascivious, filthy, violent, harassing, libelous,
-                    slanderous, or otherwise objectionable (as determined
-                    by us).
-                    <br />
-                    7. Your Contributions do not ridicule, mock, disparage,
-                    intimidate, or abuse anyone.
-                    <br />
-                    8. Your Contributions do not advocate the violent
-                    overthrow of any government or incite, encourage, or
-                    threaten physical harm against another.
-                    <br />
-                    9. Your Contributions do not violate any applicable
-                    law, regulation, or rule.
-                    <br />
-                    10. Your Contributions do not violate the privacy or
-                    publicity rights of any third party.
-                    <br />
-                    11. Your Contributions do not contain any material that
-                    solicits personal information from anyone under the age
-                    of 18 or exploits people under the age of 18 in a
-                    sexual or violent manner.
-                    <br />
-                    12. Your Contributions do not violate any applicable
-                    law concerning child pornography, or otherwise intended
-                    to protect the health or well-being of minors;
-                    <br />
-                    13. Your Contributions do not include any offensive
-                    comments that are connected to race, national origin,
-                    gender, sexual preference, or physical handicap.
-                    <br />
-                    14. Your Contributions do not otherwise violate, or
-                    link to material that violates, any provision of these
-                    Terms of Use, or any applicable law or regulation.
-                  </div>
-                  <div>
-                    <br />
-                  </div>
-                </div>
-                <div>
-                  Any use of the Site in violation of the foregoing violates
-                  these Terms of Use and may result in, among other things,
-                  termination or suspension of your rights to use the Site.
-                </div>
               </div>
-            </div>
-            <div>
-              <br />
-            </div>
-            <div>
-              <br />
-            </div>
-            <div>
+              <h6>
+                In Short:  We aim to protect your personal information through a system of organizational and technical security measures.
+                <br />
+              </h6>
               <div>
-                <div>
-                  CONTRIBUTION LICENSE
-                </div>
-                <div />
+                <br />
+              </div>
+              <div>
+                We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security, and improperly collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.
+
+              </div>
+
+              <div>
+                <br />
               </div>
               <div>
                 <br />
               </div>
+              <div />
             </div>
             <div>
-              You and the Site agree that we may access, store, process, and use
-              any information and personal data that you provide following the
-              terms of the Privacy Policy and your choices (including settings).
-              <br />
+              <a name="_6nl7u6ag6use" />
             </div>
-            <div>
-              <br />
-            </div>
-            <div>
-              By submitting suggestions or other feedback regarding the Site, you
-              agree that we can use and share such feedback for any purpose
-              without compensation to you.
-            </div>
-            <div>
-              <br />
-            </div>
-            <div>
-              We do not assert any ownership over your Contributions. You retain
-              full ownership of all of your Contributions and any intellectual
-              property rights or other proprietary rights associated with your
-              Contributions. We are not liable for any statements or
-              representations in your Contributions provided by you in any area
-              on the Site. You are solely responsible for your Contributions to
-              the Site and you expressly agree to exonerate us from any and all
-              responsibility and to refrain from any legal action against us
-              regarding your Contributions.
-            </div>
-            <div>
-              <br />
-            </div>
-            <div>
-              <br />
-            </div>
-            <div />
+            <h2>
+              7. DO WE COLLECT INFORMATION FROM MINORS?
+            </h2>
           </div>
-          <div>
-            <a name="_6nl7u6ag6use" />
-          </div>
-          <div>
-            MOBILE APPLICATION LICENSE
-          </div>
-        </div>
           <div align="center">
             <br />
           </div>
@@ -593,94 +403,86 @@ class Legal extends Component {
             <div>
               <a name="_4p0l96wt8fhj" />
             </div>
-            <div>
-              Use License
-            </div>
+            <h6>
+              In Short:  We do not knowingly collect data from or market to children under 18 years of age.
+            </h6>
           </div>
           <div align="center">
             <br />
           </div>
           <div align="center">
             <div>
-              If you access the Site via a mobile application, then we grant you a
-              revocable, non-exclusive, non-transferable, limited right to install
-              and use the mobile application on wireless electronic devices owned or
-              controlled by you, and to access and use the mobile application on such
-              devices strictly in accordance with the terms and conditions of this
-              mobile application license contained in these Terms of Use. You shall
-              not: (1) decompile, reverse engineer, disassemble, attempt to derive
-              the source code of, or decrypt the application; (2) make any
-              modification, adaptation, improvement, enhancement, translation, or
-              derivative work from the application; (3) violate any applicable laws,
-              rules, or regulations in connection with your access or use of the
-              application; (4) remove, alter, or obscure any proprietary notice
-              (including any notice of copyright or trademark) posted by us or the
-              licensors of the application; (5) use the application for any revenue
-              generating endeavor, commercial enterprise, or other purpose for which
-              it is not designed or intended; (6) make the application available over
-              a network or other environment permitting access or use by multiple
-              devices or users at the same time; (7) use the application for creating
-              a product, service, or software that is, directly or indirectly,
-              competitive with or in any way a substitute for the application; (8)
-              use the application to send automated queries to any website or to send
-              any unsolicited commercial e-mail; or (9) use any proprietary
-              information or any of our interfaces or our other intellectual property
-              in the design, development, manufacture, licensing, or distribution of
-              any applications, accessories, or devices for use with the application.
+              We do not knowingly solicit data from or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at admin@downatdart.com.
+
             </div>
           </div>
           <div align="center">
             <br />
           </div>
           <div align="center">
-            <div>
+            <h2>
               <a name="_vzf0b5xscg" />
-              Apple and Android Devices
-            </div>
+              8. WHAT ARE YOUR PRIVACY RIGHTS?
+            </h2>
           </div>
           <div align="center">
             <br />
+          </div>
+          <div align="center">
+            <h6>
+              In Short:  You may review, change, or terminate your account at any time.
+
+            </h6>
           </div>
           <div align="center">
             <div>
-              The following terms apply when you use a mobile application obtained
-              from either the Apple Store or Google Play (each an &#8220;App
-              Distributor&#8221;) to access the Site: (1) the license granted to you
-              for our mobile application is limited to a non-transferable license to
-              use the application on a device that utilizes the Apple iOS or Android
-              operating systems, as applicable, and in accordance with the usage
-              rules set forth in the applicable App Distributor&#8217;s terms of
-              service; (2) we are responsible for providing any maintenance and
-              support services with respect to the mobile application as specified in
-              the terms and conditions of this mobile application license contained
-              in these Terms of Use or as otherwise required under applicable law,
-              and you acknowledge that each App Distributor has no obligation
-              whatsoever to furnish any maintenance and support services with respect
-              to the mobile application; (3) in the event of any failure of the
-              mobile application to conform to any applicable warranty, you may
-              notify the applicable App Distributor, and the App Distributor, in
-              accordance with its terms and policies, may refund the purchase price,
-              if any, paid for the mobile application, and to the maximum extent
-              permitted by applicable law, the App Distributor will have no other
-              warranty obligation whatsoever with respect to the mobile application;
-              (4) you represent and warrant that (i) you are not located in a country
-              that is subject to a U.S. government embargo, or that has been
-              designated by the U.S. government as a &#8220;terrorist
-              supporting&#8221; country and (ii) you are not listed on any U.S.
-              government list of prohibited or restricted parties; (5) you must
-              comply with applicable third-party terms of agreement when using the
-              mobile application, e.g., if you have a VoIP application, then you must
-              not be in violation of their wireless data service agreement when using
-              the mobile application; and (6) you acknowledge and agree that the App
-              Distributors are third-party beneficiaries of the terms and conditions
-              in this mobile application license contained in these Terms of Use, and
-              that each App Distributor will have the right (and will be deemed to
-              have accepted the right) to enforce the terms and conditions in this
-              mobile application license contained in these Terms of Use against you
-              as a third-party beneficiary thereof.
+              If you are a resident in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You can find their contact details here: http://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm.
+
             </div>
           </div>
           <div align="center">
+            <div>
+              If you are a resident in Switzerland, the contact details for the data protection authorities are available here: https://www.edoeb.admin.ch/edoeb/en/home.html.
+
+            </div>
+          </div>
+          <div align="center">
+            <div>
+              If you have questions or comments about your privacy rights, you may email us at admin@downatdart.com.
+
+            </div>
+          </div>
+          <div align="center">
+            <div>
+              Account Information
+
+            </div>
+          </div>
+          <div align="center">
+            <div>
+              If you would at any time like to review or change the information in your account or terminate your account, you can:
+
+            </div>
+            <ul>
+              <li>Log in to your account settings and update your user account.</li>
+            </ul>
+          </div>
+          <div align="center">
+            <div>
+              Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with applicable legal requirements.
+
+            </div>
+          </div>
+          <div align="center">
+            <div>
+              Opting out of email marketing: You can unsubscribe from our marketing email list at any time by clicking on the unsubscribe link in the emails that we send or by contacting us using the details provided below. You will then be removed from the marketing email list — however, we may still communicate with you, for example to send you service-related emails that are necessary for the administration and use of your account, to respond to service requests, or for other non-marketing purposes. To otherwise opt-out, you may:
+
+            </div>
+            <ul>
+              <li>Contact us using the contact information provided.</li>
+            </ul>
+          </div>
+          <div align="center">
             <br />
           </div>
           <div align="center">
@@ -688,57 +490,14 @@ class Legal extends Component {
           </div>
           <div align="center" />
           <div align="center" />
-          <div>
-            SOCIAL MEDIA
-          </div>
+          <h2>
+            9. CONTROLS FOR DO-NOT-TRACK FEATURES
+          </h2>
           <div>
             <br />
           </div>
           <div>
-            As part of the functionality of the Site, you may link your account with
-            online accounts you have with third-party service providers (each such
-            account, a &#8220;Third-Party Account&#8221;) by either: (1) providing your
-            Third-Party Account login information through the Site; or (2) allowing us
-            to access your Third-Party Account, as is permitted under the applicable
-            terms and conditions that govern your use of each Third-Party Account. You
-            represent and warrant that you are entitled to disclose your Third-Party
-            Account login information to us and/or grant us access to your Third-Party
-            Account, without breach by you of any of the terms and conditions that
-            govern your use of the applicable Third-Party Account, and without
-            obligating us to pay any fees or making us subject to any usage limitations
-            imposed by the third-party service provider of the Third-Party Account. By
-            granting us access to any Third-Party Accounts, you understand that (1) we
-            may access, make available, and store (if applicable) any content that you
-            have provided to and stored in your Third-Party Account (the &#8220;Social
-            Network Content&#8221;) so that it is available on and through the Site via
-            your account, including without limitation any friend lists and (2) we may
-            submit to and receive from your Third-Party Account additional information
-            to the extent you are notified when you link your account with the
-            Third-Party Account. Depending on the Third-Party Accounts you choose and
-            subject to the privacy settings that you have set in such Third-Party
-            Accounts, personally identifiable information that you post to your
-            Third-Party Accounts may be available on and through your account on the
-            Site. Please note that if a Third-Party Account or associated service
-            becomes unavailable or our access to such Third Party Account is terminated
-            by the third-party service provider, then Social Network Content may no
-            longer be available on and through the Site. You will have the ability to
-            disable the connection between your account on the Site and your
-            Third-Party Accounts at any time. PLEASE NOTE THAT YOUR RELATIONSHIP WITH
-            THE THIRD-PARTY SERVICE PROVIDERS ASSOCIATED WITH YOUR THIRD-PARTY ACCOUNTS
-            IS GOVERNED SOLELY BY YOUR AGREEMENT(S) WITH SUCH THIRD-PARTY SERVICE
-            PROVIDERS. We make no effort to review any Social Network Content for any
-            purpose, including but not limited to, for accuracy, legality, or
-            non-infringement, and we are not responsible for any Social Network
-            Content. You acknowledge and agree that we may access your email address
-            book associated with a Third-Party Account and your contacts list stored on
-            your mobile device or tablet computer solely for purposes of identifying
-            and informing you of those contacts who have also registered to use the
-            Site. You can deactivate the connection between the Site and your
-            Third-Party Account by contacting us using the contact information below or
-            through your account settings (if applicable). We will attempt to delete
-            any information stored on our servers that was obtained through such
-            Third-Party Account, except the username and profile picture that become
-            associated with your account.
+            Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.
           </div>
           <div>
             <br />
@@ -747,25 +506,23 @@ class Legal extends Component {
             <br />
           </div>
           <div align="center" />
-          <div>
-            SUBMISSIONS
-          </div>
+          <h2>
+            10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
+          </h2>
           <div>
             <br />
           </div>
+          <h6>
+            In Short:  Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.
+
+          </h6>
           <div>
-            You acknowledge and agree that any questions, comments, suggestions, ideas,
-            feedback, or other information regarding the Site ("Submissions") provided
-            by you to us are non-confidential and shall become our sole property. We
-            shall own exclusive rights, including all intellectual property rights, and
-            shall be entitled to the unrestricted use and dissemination of these
-            Submissions for any lawful purpose, commercial or otherwise, without
-            acknowledgment or compensation to you. You hereby waive all moral rights to
-            any such Submissions, and you hereby warrant that any such Submissions are
-            original with you or that you have the right to submit such Submissions.
-            You agree there shall be no recourse against us for any alleged or actual
-            infringement or misappropriation of any proprietary right in your
-            Submissions.
+            California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.
+
+          </div>
+          <div>
+            If you are under 18 years of age, reside in California, and have a registered account with a Service, you have the right to request removal of unwanted data that you publicly post on the Services. To request removal of such data, please contact us using the contact information provided below, and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Services, but please be aware that the data may not be completely or comprehensively removed from all our systems (e.g. backups, etc.).
+
           </div>
           <div>
             <br />
@@ -774,42 +531,18 @@ class Legal extends Component {
             <br />
           </div>
           <div align="center" />
-          <div>
-            THIRD-PARTY WEBSITE AND CONTENT
-          </div>
+          <h2>
+            11. DO WE MAKE UPDATES TO THIS NOTICE?
+          </h2>
           <div>
             <br />
           </div>
+          <h6>
+            In Short:  Yes, we will update this notice as necessary to stay compliant with relevant laws.
+
+          </h6>
           <div>
-            The Site may contain (or you may be sent via the Site) links to other
-            websites ("Third-Party Websites") as well as articles, photographs, text,
-            graphics, pictures, designs, music, sound, video, information,
-            applications, software, and other content or items belonging to or
-            originating from third parties ("Third-Party Content"). Such Third-Party
-            Websites and Third-Party Content are not investigated, monitored, or
-            checked for accuracy, appropriateness, or completeness by us, and we are
-            not responsible for any Third-Party Websites accessed through the Site or
-            any Third-Party Content posted on, available through, or installed from the
-            Site, including the content, accuracy, offensiveness, opinions,
-            reliability, privacy practices, or other policies of or contained in the
-            Third-Party Websites or the Third-Party Content. Inclusion of, linking to,
-            or permitting the use or installation of any Third-Party Websites or any
-            Third-Party Content does not imply approval or endorsement thereof by us.
-            If you decide to leave the Site and access the Third-Party Websites or to
-            use or install any Third-Party Content, you do so at your own risk, and you
-            should be aware these Terms of Use no longer govern. You should review the
-            applicable terms and policies, including privacy and data gathering
-            practices, of any website to which you navigate from the Site or relating
-            to any applications you use or install from the Site. Any purchases you
-            make through Third-Party Websites will be through other websites and from
-            other companies, and we take no responsibility whatsoever in relation to
-            such purchases which are exclusively between you and the applicable third
-            party. You agree and acknowledge that we do not endorse the products or
-            services offered on Third-Party Websites and you shall hold us harmless
-            from any harm caused by your purchase of such products or services.
-            Additionally, you shall hold us harmless from any losses sustained by you
-            or harm caused to you relating to or resulting in any way from any
-            Third-Party Content or any contact with Third-Party Websites.
+            We may update this privacy notice from time to time. The updated version will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.
           </div>
           <div>
             <br />
@@ -822,29 +555,42 @@ class Legal extends Component {
             <div>
               <a name="_29ce8o9pbtmi" />
             </div>
-            <div>
+            <h2>
               <a name="_wj13r09u8u3u" />
-              SITE MANAGEMENT
-            </div>
+              12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
+            </h2>
           </div>
           <div align="center">
             <br />
           </div>
           <div align="center">
             <div>
-              We reserve the right, but not the obligation, to: (1) monitor the Site
-              for violations of these Terms of Use; (2) take appropriate legal action
-              against anyone who, in our sole discretion, violates the law or these
-              Terms of Use, including without limitation, reporting such user to law
-              enforcement authorities; (3) in our sole discretion and without
-              limitation, refuse, restrict access to, limit the availability of, or
-              disable (to the extent technologically feasible) any of your
-              Contributions or any portion thereof; (4) in our sole discretion and
-              without limitation, notice, or liability, to remove from the Site or
-              otherwise disable all files and content that are excessive in size or
-              are in any way burdensome to our systems; and (5) otherwise manage the
-              Site in a manner designed to protect our rights and property and to
-              facilitate the proper functioning of the Site.
+              If you have questions or comments about this notice, you may email us at admin@downatdart.com or by post to:
+
+            </div>
+          </div>
+          <div align="center">
+            <div>
+              Who's Down LLC
+
+            </div>
+          </div>
+          <div align="center">
+            <div>
+              601 Manassas Gap Place
+
+            </div>
+          </div>
+          <div align="center">
+            <div>
+              Cary, NC 27519
+
+            </div>
+          </div>
+          <div align="center">
+            <div>
+              United States
+
             </div>
           </div>
           <div align="center">
@@ -857,710 +603,20 @@ class Legal extends Component {
             <div>
               <a name="_jugvcvcw0oj9" />
             </div>
-            <div>
-              PRIVACY POLICY
-            </div>
+            <h2>
+              13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
+            </h2>
             <div>
               <br />
             </div>
             <div>
-              We care about data privacy and security. Please review our Privacy
-              Policy: downatdart.me/legal. By using the Site, you agree to be bound
-              by our Privacy Policy, which is incorporated into these Terms of Use.
-              Please be advised the Site is hosted in the United States. If you
-              access the Site from any other region of the world with laws or other
-              requirements governing personal data collection, use, or disclosure
-              that differ from applicable laws in the United States, then through
-              your continued use of the Site, you are transferring your data to the
-              United States, and you agree to have your data transferred to and
-              processed in the United States.
+              Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please visit: mailto:admin@downatdart.com.
             </div>
           </div>
           <div align="center">
             <br />
           </div>
-          <div align="center">
-            <br />
-          </div>
-          <div align="center">
-            <div />
-            <div>
-              <a name="_n081pott8yce" />
-            </div>
-            <div>
-              <a name="_sg28ikxq3swh" />
-            </div>
-            <div align="center">
-              <div>
-                <a name="_k3mndam4w6w1" />
-                TERM AND TERMINATION
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                These Terms of Use shall remain in full force and effect while you
-                use the Site. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS
-                OF USE, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT
-                NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SITE (INCLUDING
-                BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR
-                NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY
-                REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE TERMS OF
-                USE OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR
-                USE OR PARTICIPATION IN THE SITE OR DELETE YOUR ACCOUNT AND ANY
-                CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT
-                WARNING, IN OUR SOLE DISCRETION.
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                If we terminate or suspend your account for any reason, you are
-                prohibited from registering and creating a new account under your
-                name, a fake or borrowed name, or the name of any third party, even
-                if you may be acting on behalf of the third party. In addition to
-                terminating or suspending your account, we reserve the right to
-                take appropriate legal action, including without limitation
-                pursuing civil, criminal, and injunctive redress.
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                <br />
-              </div>
-              <div>
-                <a name="_e2dep1hfgltt" />
-                MODIFICATIONS AND INTERRUPTIONS
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                We reserve the right to change, modify, or remove the contents of
-                the Site at any time or for any reason at our sole discretion
-                without notice. However, we have no obligation to update any
-                information on our Site. We also reserve the right to modify or
-                discontinue all or part of the Site without notice at any time. We
-                will not be liable to you or any third party for any modification,
-                price change, suspension, or discontinuance of the Site.
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                We cannot guarantee the Site will be available at all times. We may
-                experience hardware, software, or other problems or need to perform
-                maintenance related to the Site, resulting in interruptions,
-                delays, or errors. We reserve the right to change, revise, update,
-                suspend, discontinue, or otherwise modify the Site at any time or
-                for any reason without notice to you. You agree that we have no
-                liability whatsoever for any loss, damage, or inconvenience caused
-                by your inability to access or use the Site during any downtime or
-                discontinuance of the Site. Nothing in these Terms of Use will be
-                construed to obligate us to maintain and support the Site or to
-                supply any corrections, updates, or releases in connection
-                therewith.
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                <br />
-              </div>
-              <div>
-                <a name="_p6vbf8atcwhs" />
-                GOVERNING LAW
-              </div>
-              <div>
-                <br />
-              </div>
-              <div />
-              <div>
-                These Terms of Use and your use of the Site are governed by and
-                construed in accordance with the laws of the State of North
-                Carolina applicable to agreements made and to be entirely performed
-                within the State of North Carolina, without regard to its conflict
-                of law principles.
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <a name="_v5i5tjw62cyw" />
-                DISPUTE RESOLUTION
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                <div>
-                  Informal Negotiations
-                </div>
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <div>
-                  To expedite resolution and control the cost of any dispute,
-                  controversy, or claim related to these Terms of Use (each a
-                  "Dispute" and collectively, the &#8220;Disputes&#8221;) brought
-                  by either you or us (individually, a &#8220;Party&#8221; and
-                  collectively, the &#8220;Parties&#8221;), the Parties agree to
-                  first attempt to negotiate any Dispute (except those Disputes
-                  expressly provided below) informally for at least thirty (30)
-                  days before initiating arbitration. Such informal negotiations
-                  commence upon written notice from one Party to the other Party.
-                </div>
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <div>
-                  <a name="_p2enhfx5sw3j" />
-                  Binding Arbitration
-                </div>
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <div>
-                  If the Parties are unable to resolve a Dispute through informal
-                  negotiations, the Dispute (except those Disputes expressly
-                  excluded below) will be finally and exclusively resolved
-                  through binding arbitration. YOU UNDERSTAND THAT WITHOUT THIS
-                  PROVISION, YOU WOULD HAVE THE RIGHT TO SUE IN COURT AND HAVE A
-                  JURY TRIAL. The arbitration shall be commenced and conducted
-                  under the Commercial Arbitration Rules of the American
-                  Arbitration Association ("AAA") and, where appropriate, the
-                  AAA&#8217;s Supplementary Procedures for Consumer Related
-                  Disputes ("AAA Consumer Rules"), both of which are available at
-                  the AAA website:
-                  <a
-                    href="http://www.adr.org/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    www.adr.org
-                  </a>
-                  . Your arbitration fees and your share of arbitrator
-                  compensation shall be governed by the AAA Consumer Rules and,
-                  where appropriate, limited by the AAA Consumer Rules. The
-                  arbitration may be conducted in person, through the submission
-                  of documents, by phone, or online. The arbitrator will make a
-                  decision in writing, but need not provide a statement of
-                  reasons unless requested by either Party. The arbitrator must
-                  follow applicable law, and any award may be challenged if the
-                  arbitrator fails to do so. Except where otherwise required by
-                  the applicable AAA rules or applicable law, the arbitration
-                  will take place in Wake, North Carolina. Except as otherwise
-                  provided herein, the Parties may litigate in court to compel
-                  arbitration, stay proceedings pending arbitration, or to
-                  confirm, modify, vacate, or enter judgment on the award entered
-                  by the arbitrator.
-                </div>
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <div>
-                  If for any reason, a Dispute proceeds in court rather than
-                  arbitration, the Dispute shall be commenced or prosecuted in
-                  the state and federal courts located in Wake, North Carolina,
-                  and the Parties hereby consent to, and waive all defenses of
-                  lack of personal jurisdiction, and forum non conveniens with
-                  respect to venue and jurisdiction in such state and federal
-                  courts. Application of the United Nations Convention on
-                  Contracts for the International Sale of Goods and the the
-                  Uniform Computer Information Transaction Act (UCITA) is
-                  excluded from these Terms of Use.
-                </div>
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <div>
-                  In no event shall any Dispute brought by either Party related
-                  in any way to the Site be commenced more than one (1) years
-                  after the cause of action arose. If this provision is found to
-                  be illegal or unenforceable, then neither Party will elect to
-                  arbitrate any Dispute falling within that portion of this
-                  provision found to be illegal or unenforceable, and such
-                  Dispute shall be decided by a court of competent jurisdiction
-                  within the courts listed for jurisdiction above, and the
-                  Parties agree to submit to the personal jurisdiction of that
-                  court.
-                </div>
-                <div>
-                  <a name="_xl7dsk6ndrpp" />
-                </div>
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <div>
-                  <a name="_inlv5c77dhih" />
-                  Restrictions
-                </div>
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <div>
-                  The Parties agree that any arbitration shall be limited to the
-                  Dispute between the Parties individually. To the full extent
-                  permitted by law, (a) no arbitration shall be joined with any
-                  other proceeding; (b) there is no right or authority for any
-                  Dispute to be arbitrated on a class-action basis or to utilize
-                  class action procedures; and (c) there is no right or authority
-                  for any Dispute to be brought in a purported representative
-                  capacity on behalf of the general public or any other persons.
-                </div>
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <div>
-                  <a name="_mdjlt1af25uq" />
-                  Exceptions to Informal Negotiations and Arbitration
-                </div>
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <div>
-                  The Parties agree that the following Disputes are not subject
-                  to the above provisions concerning informal negotiations and
-                  binding arbitration: (a) any Disputes seeking to enforce or
-                  protect, or concerning the validity of, any of the intellectual
-                  property rights of a Party; (b) any Dispute related to, or
-                  arising from, allegations of theft, piracy, invasion of
-                  privacy, or unauthorized use; and (c) any claim for injunctive
-                  relief. If this provision is found to be illegal or
-                  unenforceable, then neither Party will elect to arbitrate any
-                  Dispute falling within that portion of this provision found to
-                  be illegal or unenforceable and such Dispute shall be decided
-                  by a court of competent jurisdiction within the courts listed
-                  for jurisdiction above, and the Parties agree to submit to the
-                  personal jurisdiction of that court.
-                </div>
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                <br />
-              </div>
-              <div>
-                <a name="_mjgzo07ttzx5" />
-                CORRECTIONS
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                There may be information on the Site that contains typographical
-                errors, inaccuracies, or omissions, including descriptions,
-                pricing, availability, and various other information. We reserve
-                the right to correct any errors, inaccuracies, or omissions and to
-                change or update the information on the Site at any time, without
-                prior notice.
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                <br />
-              </div>
-              <div>
-                <a name="_gvi74blrahf9" />
-                DISCLAIMER
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                THE SITE IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE
-                THAT YOUR USE OF THE SITE AND OUR SERVICES WILL BE AT YOUR SOLE
-                RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL
-                WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SITE AND
-                YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
-                WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
-                AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS
-                ABOUT THE ACCURACY OR COMPLETENESS OF THE SITE&#8217;S CONTENT OR
-                THE CONTENT OF ANY WEBSITES LINKED TO THE SITE AND WE WILL ASSUME
-                NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR
-                INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR
-                PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR
-                ACCESS TO AND USE OF THE SITE, (3) ANY UNAUTHORIZED ACCESS TO OR
-                USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION
-                AND/OR FINANCIAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION
-                OR CESSATION OF TRANSMISSION TO OR FROM THE SITE, (5) ANY BUGS,
-                VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR
-                THROUGH THE SITE BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR
-                OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF
-                ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED,
-                TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SITE. WE DO NOT
-                WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY
-                PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH
-                THE SITE, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE
-                APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE
-                WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING
-                ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF
-                PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE
-                THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST
-                JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE.
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                <br />
-              </div>
-              <div>
-                <a name="_4pjah3d0455q" />
-                LIMITATIONS OF LIABILITY
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE
-                LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT,
-                CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES,
-                INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES
-                ARISING FROM YOUR USE OF THE SITE, EVEN IF WE HAVE BEEN ADVISED OF
-                THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE
-                CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE
-                WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL
-                TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US. CERTAIN
-                US STATE LAWS AND INTERNATIONAL LAWS DO NOT ALLOW LIMITATIONS ON
-                IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN
-                DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE
-                DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE
-                ADDITIONAL RIGHTS.
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                <br />
-              </div>
-              <div>
-                <a name="_k5ap68aj1dd4" />
-                INDEMNIFICATION
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                You agree to defend, indemnify, and hold us harmless, including our
-                subsidiaries, affiliates, and all of our respective officers,
-                agents, partners, and employees, from and against any loss, damage,
-                liability, claim, or demand, including reasonable attorneys&#8217;
-                fees and expenses, made by any third party due to or arising out
-                of: (1) use of the Site; (2) breach of these Terms of Use; (3) any
-                breach of your representations and warranties set forth in these
-                Terms of Use; (4) your violation of the rights of a third party,
-                including but not limited to intellectual property rights; or (5)
-                any overt harmful act toward any other user of the Site with whom
-                you connected via the Site. Notwithstanding the foregoing, we
-                reserve the right, at your expense, to assume the exclusive defense
-                and control of any matter for which you are required to indemnify
-                us, and you agree to cooperate, at your expense, with our defense
-                of such claims. We will use reasonable efforts to notify you of any
-                such claim, action, or proceeding which is subject to this
-                indemnification upon becoming aware of it.
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                <br />
-              </div>
-              <div>
-                <a name="_ftgg17oha0ep" />
-                USER DATA
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                We will maintain certain data that you transmit to the Site for the
-                purpose of managing the performance of the Site, as well as data
-                relating to your use of the Site. Although we perform regular
-                routine backups of data, you are solely responsible for all data
-                that you transmit or that relates to any activity you have
-                undertaken using the Site. You agree that we shall have no
-                liability to you for any loss or corruption of any such data, and
-                you hereby waive any right of action against us arising from any
-                such loss or corruption of such data.
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                <br />
-              </div>
-              <div>
-                <a name="_dkovrslqodui" />
-                ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                Visiting the Site, sending us emails, and completing online forms
-                constitute electronic communications. You consent to receive
-                electronic communications, and you agree that all agreements,
-                notices, disclosures, and other communications we provide to you
-                electronically, via email and on the Site, satisfy any legal
-                requirement that such communication be in writing. YOU HEREBY AGREE
-                TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER
-                RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND
-                RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE
-                SITE. You hereby waive any rights or requirements under any
-                statutes, regulations, rules, ordinances, or other laws in any
-                jurisdiction which require an original signature or delivery or
-                retention of non-electronic records, or to payments or the granting
-                of credits by any means other than electronic means.
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <br />
-              </div>
-              <div />
-              <div>
-                <a name="_cem9cu2usl7k" />
-                CALIFORNIA USERS AND RESIDENTS
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                If any complaint with us is not satisfactorily resolved, you can
-                contact the Complaint Assistance Unit of the Division of Consumer
-                Services of the California Department of Consumer Affairs in
-                writing at 1625 North Market Blvd., Suite N 112, Sacramento,
-                California 95834 or by telephone at (800) 952-5210 or (916)
-                445-1254.
-              </div>
-              <div>
-                <br />
-              </div>
-              <div>
-                <br />
-              </div>
-              <div />
-              <div>
-                <a name="_d4jvmcnxg0wt" />
-                MISCELLANEOUS
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                These Terms of Use and any policies or operating rules posted by us
-                on the Site or in respect to the Site constitute the entire
-                agreement and understanding between you and us. Our failure to
-                exercise or enforce any right or provision of these Terms of Use
-                shall not operate as a waiver of such right or provision. These
-                Terms of Use operate to the fullest extent permissible by law. We
-                may assign any or all of our rights and obligations to others at
-                any time. We shall not be responsible or liable for any loss,
-                damage, delay, or failure to act caused by any cause beyond our
-                reasonable control. If any provision or part of a provision of
-                these Terms of Use is determined to be unlawful, void, or
-                unenforceable, that provision or part of the provision is deemed
-                severable from these Terms of Use and does not affect the validity
-                and enforceability of any remaining provisions. There is no joint
-                venture, partnership, employment or agency relationship created
-                between you and us as a result of these Terms of Use or use of the
-                Site. You agree that these Terms of Use will not be construed
-                against us by virtue of having drafted them. You hereby waive any
-                and all defenses you may have based on the electronic form of these
-                Terms of Use and the lack of signing by the parties hereto to
-                execute these Terms of Use.
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                <br />
-              </div>
-              <div>
-                <a name="_t4pq5cwn486q" />
-                CONTACT US
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                In order to resolve a complaint regarding the Site or to receive
-                further information regarding use of the Site, please contact us
-                at:
-              </div>
-            </div>
-            <div align="center">
-              <br />
-            </div>
-            <div align="center">
-              <div>
-                Who's Down LLC
-              </div>
-              <div>
-                601 Manassas Gap Place
-              </div>
-              <div>
-                Cary, NC 27519-9613
-              </div>
-              <div>
-                United States
-              </div>
-              <div>
-                Phone: 9197419655
-              </div>
-              <div>
-                bhatt_arjun@yahoo.com
-              </div>
-              <div>
-                <br />
-              </div>
-            </div>
-          </div></div>
-        <h1>Privacy Policy for Who's Down</h1>
-
-        <p>At Who's Down, accessible from downatdart.me, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Who's Down and how we use it.</p>
-
-        <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
-
-        <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Who's Down. This policy is not applicable to any information collected offline or via channels other than this website.</p>
-
-        <h2>Consent</h2>
-
-        <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
-
-        <h2>Information we collect</h2>
-
-        <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
-        <p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
-        <p>When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
-
-        <h2>How we use your information</h2>
-
-        <p>We use the information we collect in various ways, including to:</p>
-
-        <ul>
-          <li>Provide, operate, and maintain our webste</li>
-          <li>Improve, personalize, and expand our webste</li>
-          <li>Understand and analyze how you use our webste</li>
-          <li>Develop new products, services, features, and functionality</li>
-          <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the webste, and for marketing and promotional purposes</li>
-          <li>Send you emails</li>
-          <li>Find and prevent fraud</li>
-        </ul>
-
-        <h2>Log Files</h2>
-
-        <p>Who's Down follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information. Our Privacy Policy was created with the help of the <a href="https://www.privacypolicygenerator.info">Privacy Policy Generator</a> and the <a href="https://www.privacypolicyonline.com/privacy-policy-generator/">Online Privacy Policy Generator</a>.</p>
-
-
-        <h2>Advertising Partners Privacy Policies</h2>
-
-        <p>You may consult this list to find the Privacy Policy for each of the advertising partners of Who's Down.</p>
-
-        <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Who's Down, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
-
-        <p>Note that Who's Down has no access to or control over these cookies that are used by third-party advertisers.</p>
-
-        <h2>Third Party Privacy Policies</h2>
-
-        <p>Who's Down's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
-
-        <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
-
-        <h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
-
-        <p>Under the CCPA, among other rights, California consumers have the right to:</p>
-        <p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
-        <p>Request that a business delete any personal data about the consumer that a business has collected.</p>
-        <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
-        <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
-
-        <h2>GDPR Data Protection Rights</h2>
-
-        <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
-        <p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
-        <p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
-        <p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
-        <p>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
-        <p>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
-        <p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
-        <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
-
-        <h2>Children's Information</h2>
-        <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
-        <p>Who's Down does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+        </div>
       </div>
     );
   }
